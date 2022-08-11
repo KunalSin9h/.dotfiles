@@ -2,6 +2,7 @@
 alias git=hub
 alias ls=lsd
 alias cat='batcat'
+alias cl=clear
 
 # git
 abbr -a gs  git status -sb
