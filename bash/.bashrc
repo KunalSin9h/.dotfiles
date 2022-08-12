@@ -16,6 +16,10 @@ eval "$(starship init bash)"
 PROMPT_DIRTRIM=1
 export GOPATH=/bin/go
 
+# bun.sh
+export BUN_INSTALL="$HOME/.bun" 
+export PATH="$BUN_INSTALL/bin:$PATH"
+
 
 # If not running interactively, don't do anything
 case $- in

@@ -7,7 +7,6 @@ add_newline = true
 #command_timeout = 1000
 
 [cmd_duration]
-min_time = 1  # Show command duration over 10,000 milliseconds (=10 sec)
 format = " took [$duration]($style)"
 
 # Change the default prompt format
@@ -40,8 +39,8 @@ format = "on [$hostname](bold yellow) "
 disabled = false
 
 [directory]
-truncation_length = 3
-truncation_symbol = "…/"
+truncation_length = 1
+#truncation_symbol = "…/"
 home_symbol = " ~"
 read_only_style = "197"
 read_only = "  "
