@@ -30,7 +30,7 @@ format = " took [$duration]($style)"
 style_user = "white"
 style_root = "white"
 format = "[$user](bold $style) "
-disabled = true
+disabled = false
 show_always = false
 
 [hostname]
@@ -188,7 +188,3 @@ disabled = true
 [zig]
 format = 'via [$symbol]($style)'
 disabled = true
-
-[bun]
-format = 'via [$symbol]($style)'
-disabled = false
