@@ -4,7 +4,7 @@
 add_newline = true
 
 # Change command timeout from 500 to 1000 ms
-#command_timeout = 1000
+# command_timeout = 1000
 
 [cmd_duration]
 format = " took [$duration]($style)"
@@ -39,9 +39,9 @@ format = "on [$hostname](bold yellow) "
 disabled = false
 
 [directory]
-truncation_length = 1
-#truncation_symbol = "…/"
-home_symbol = " ~"
+truncation_length = 3
+truncation_symbol = "…/"
+home_symbol = "~"
 read_only_style = "197"
 read_only = "  "
 format = "[$path]($style)[$read_only]($read_only_style) "
@@ -88,7 +88,7 @@ disabled = true
 
 [docker_context]
 format = "via [ $context](bold blue) "
-disabled = true
+disabled = false
 
 [helm]
 format = "via [ $version](bold purple) "
@@ -123,7 +123,7 @@ disabled = false
 
 [aws]
 symbol = "  "
-disabled = true
+disabled = false
 
 [buf]
 symbol = " "
@@ -188,3 +188,7 @@ disabled = true
 [zig]
 format = 'via [$symbol]($style)'
 disabled = true
+
+[bun]
+format = 'via [$symbol]($style)'
+disabled = false
