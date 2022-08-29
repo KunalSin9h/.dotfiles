@@ -1,7 +1,7 @@
 # apps... but better
 alias git=hub
 alias ls=lsd
-alias cat='batcat'
+alias cat=batcat
 alias cl=clear
 
 # git
@@ -28,6 +28,9 @@ alias l='lsd -l'
 alias la='lsd -a'
 alias lla='lsd -la'
 alias lt='lsd --tree'
+
+# tmux
+alias tmux='tmux -u'
 
 # misc
 alias reload='exec fish'
