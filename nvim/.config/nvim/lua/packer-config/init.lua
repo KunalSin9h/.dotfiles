@@ -13,6 +13,7 @@ return require'packer'.startup(function()
     use 'lewis6991/gitsigns.nvim'
     use 'akinsho/toggleterm.nvim'
     use 'nvim-telescope/telescope.nvim'
+    use 'nvim-treesitter/nvim-treesitter'
 
     -- LSP
     use 'neovim/nvim-lspconfig' -- Collection of configurations for built-in LSP client

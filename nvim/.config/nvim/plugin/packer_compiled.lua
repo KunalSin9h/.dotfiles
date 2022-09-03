@@ -144,6 +144,11 @@ _G.packer_plugins = {
     path = "/home/kunal/.local/share/nvim/site/pack/packer/start/nvim-notify",
     url = "https://github.com/rcarriga/nvim-notify"
   },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/kunal/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/kunal/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
