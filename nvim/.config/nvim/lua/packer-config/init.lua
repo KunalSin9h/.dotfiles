@@ -24,4 +24,10 @@ return require'packer'.startup(function()
 
     use 'onsails/lspkind.nvim' -- icons for autocomplete
 
+    -- Lsp Installer
+    use 'williamboman/nvim-lsp-installer'
+
+    -- Java
+    use 'mfussenegger/nvim-jdtls'
+
 end)
