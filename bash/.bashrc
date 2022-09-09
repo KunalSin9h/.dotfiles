@@ -19,6 +19,9 @@ export GOPATH=/bin/go
 export BUN_INSTALL="$HOME/.bun" 
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+# commit.sh
+export COMMIT_INSTALL="$HOME/.commit" 
+export PATH="$COMMIT_INSTALL/bin:$PATH"
 
 # If not running interactively, don't do anything
 case $- in
