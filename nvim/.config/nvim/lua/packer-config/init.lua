@@ -14,6 +14,7 @@ return require'packer'.startup(function()
     use 'akinsho/toggleterm.nvim'
     use 'nvim-telescope/telescope.nvim'
     use 'nvim-treesitter/nvim-treesitter'
+    use 'mfussenegger/nvim-jdtls'
 
     -- LSP
     use 'neovim/nvim-lspconfig' -- Collection of configurations for built-in LSP client
@@ -26,8 +27,5 @@ return require'packer'.startup(function()
 
     -- Lsp Installer
     use 'williamboman/nvim-lsp-installer'
-
-    -- Java
-    use 'mfussenegger/nvim-jdtls'
 
 end)
