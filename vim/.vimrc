@@ -8,8 +8,8 @@
 "General Editor Setting
 set autoread                    " Auto reload file after external commandset relativenumber
 set binary                      " Enable binary support
-set number                      " Show line numbers
-set nornu                       " set no relativenumber
+" set number
+set relativenumber                       " set no relativenumber
 set ttyfast                     " Fast terminal
 
 set foldmethod=syntax
@@ -23,9 +23,9 @@ syntax on
 set nohlsearch
 set noerrorbells
 
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 set cindent  
 set smartindent
@@ -106,7 +106,9 @@ Plugin 'delimitMate.vim' "completion for quotes, parens, brackets
 " "yarn install --ignore-engines" will work
 Plugin 'neoclide/coc.nvim' "conquer of completion
 
-Plugin 'turbio/bracey.vim' "for live server 
+" Plugin 'turbio/bracey.vim' "for live server 
+
+Plugin 'tpope/vim-commentary' " for comments
 
 call vundle#end()            " required
 filetype plugin indent on    " required

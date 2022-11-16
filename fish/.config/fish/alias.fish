@@ -3,6 +3,7 @@ alias git=hub
 alias ls=lsd
 alias cat=batcat
 alias cl=clear
+alias e=vim
 
 # git
 abbr -a gs  git status -sb

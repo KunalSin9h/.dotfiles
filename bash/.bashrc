@@ -120,7 +120,7 @@ alias make='make.sh'
 alias gedit='gnome-text-editor'
 alias cm='cm.sh'
 alias rm="trash-rm"
-alias e='nvim'
+alias e='vim'
 alias cat='batcat'
 alias tmux='tmux -u'
 
