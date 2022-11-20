@@ -69,9 +69,9 @@ augroup remember_folds
   autocmd BufWinEnter * silent! loadview
 augroup END
 
-"let g:solarized_termcolors=256
+" let g:solarized_termcolors=256
 set background=dark
-"colorscheme solarized
+" colorscheme solarized
 "colorscheme zenburn
 colorscheme gruvbox
 "colorscheme cobalt2
