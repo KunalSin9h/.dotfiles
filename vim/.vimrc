@@ -69,14 +69,14 @@ augroup remember_folds
   autocmd BufWinEnter * silent! loadview
 augroup END
 
-" let g:solarized_termcolors=256
-set background=dark
-" colorscheme solarized
-"colorscheme zenburn
-colorscheme gruvbox
-"colorscheme cobalt2
-"colorscheme onehalfdark
-"colorscheme onehalflight
+let g:solarized_termcolors=256
+set background=light
+colorscheme solarized
+" colorscheme zenburn
+" colorscheme gruvbox
+" colorscheme cobalt2
+" colorscheme onehalfdark
+" colorscheme onehalflight
 
 "Append template to new C++ files
 autocmd BufNewFile *.cpp 0r ~/.vim/templates/skeleton.cpp
