@@ -1,10 +1,12 @@
-#             ___.                 .__                   
-#             \_ |__ _____    _____|  |_________   ____  
-#              | __ \\__  \  /  ___/  |  \_  __ \_/ ___\ 
-#              | \_\ \/ __ \_\___ \|   Y  \  | \/\  \___ 
-#           /\ |___  (____  /____  >___|  /__|    \___  >
-#           \/     \/     \/     \/     \/            \/ 
-#
+
+
+# ░░░██████╗░░█████╗░░██████╗██╗░░██╗██████╗░░█████╗░
+# ░░░██╔══██╗██╔══██╗██╔════╝██║░░██║██╔══██╗██╔══██╗
+# ░░░██████╦╝███████║╚█████╗░███████║██████╔╝██║░░╚═╝
+# ░░░██╔══██╗██╔══██║░╚═══██╗██╔══██║██╔══██╗██║░░██╗
+# ██╗██████╦╝██║░░██║██████╔╝██║░░██║██║░░██║╚█████╔╝
+# ╚═╝╚═════╝░╚═╝░░╚═╝╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -122,7 +124,7 @@ alias cm='cm.sh'
 alias rm="trash-rm"
 alias e='vim'
 alias cat='batcat'
-alias tmux='tmux -u'
+# alias tmux='tmux -u'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
