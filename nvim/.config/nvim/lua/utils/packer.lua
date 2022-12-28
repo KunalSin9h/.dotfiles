@@ -18,6 +18,7 @@ return require('packer').startup(function(use)
   use('nvim-treesitter/nvim-treesitter', {run =  ':TSUpdate'})
   use('theprimeagen/harpoon')
   use('mbbill/undotree')
+  use('Raimondi/delimitMate')
   use('tpope/vim-fugitive')
   use {
 	  'VonHeikemen/lsp-zero.nvim',
