@@ -124,6 +124,8 @@ alias cm='cm.sh'
 alias rm="trash-rm"
 alias e='vim'
 alias cat='batcat'
+alias nix='nix-env'
+alias nixsh='nix-shell'
 # alias tmux='tmux -u'
 
 # Add an "alert" alias for long running commands.  Use like so:

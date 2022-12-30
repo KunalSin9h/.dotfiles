@@ -4,6 +4,8 @@ alias ls=lsd
 alias cat=batcat
 alias cl=clear
 alias e=vim
+alias nix=nix-env
+alias nixsh=nix-shell
 
 # git
 abbr -a gs  git status -sb
