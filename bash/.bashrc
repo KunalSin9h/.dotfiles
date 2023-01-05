@@ -15,7 +15,7 @@
 eval "$(starship init bash)"
 
 PROMPT_DIRTRIM=1
-export GOPATH=/bin/go
+export GOPATH=~/go
 
 # bun.sh
 export BUN_INSTALL="$HOME/.bun" 
