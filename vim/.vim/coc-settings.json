@@ -1,3 +1,0 @@
-{
-    "clangd.fallbackFlags": [ "-std=c++17" ]
-}

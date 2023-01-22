@@ -70,18 +70,18 @@ augroup remember_folds
   autocmd BufWinEnter * silent! loadview
 augroup END
 
-let g:solarized_termcolors=256
-set background=light
-colorscheme solarized
+" let g:solarized_termcolors=256
+set background=dark
+"colorscheme solarized
 " colorscheme zenburn
-" colorscheme gruvbox
+colorscheme gruvbox
 " colorscheme cobalt2
 " colorscheme onehalfdark
 " colorscheme onehalflight
 
-"Append template to new C++ files
-autocmd BufNewFile *.cpp 0r ~/.vim/templates/skeleton.cpp
-autocmd BufNewFile *.c 0r ~/.vim/templates/skeleton.c
+" Append template to new C++ files
+" autocmd BufNewFile *.cpp 0r ~/.vim/templates/skeleton.cpp
+" autocmd BufNewFile *.c 0r ~/.vim/templates/skeleton.c
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -113,6 +113,7 @@ Plugin 'tpope/vim-commentary' " for comments
 
 call vundle#end()            " required
 filetype plugin indent on    " required
+
 
 "Disable new window popin when YouCompleteMe suggest something
 "set completeopt-=preview
@@ -162,3 +163,14 @@ inoremap <silent><expr> <Tab>
 
 " Key map for Coc Explorer
 map <space>e <Cmd>CocCommand explorer<CR>
+
+" Go lsp - add missing imports on save
+" autocmd bufwritepre *.go :silent call cocaction('runcommand', 'editor.action.organizeimport')
+
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
