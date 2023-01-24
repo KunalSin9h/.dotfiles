@@ -14,6 +14,7 @@ set relativenumber                       " set no relativenumber
 set ttyfast                     " Fast terminal
 
 set foldmethod=syntax
+set background=dark
 
 " Move between open buffers
 nnoremap <C-n> :bnext<CR>
@@ -70,15 +71,6 @@ augroup remember_folds
   autocmd BufWinEnter * silent! loadview
 augroup END
 
-" let g:solarized_termcolors=256
-set background=dark
-"colorscheme solarized
-" colorscheme zenburn
-colorscheme gruvbox
-" colorscheme cobalt2
-" colorscheme onehalfdark
-" colorscheme onehalflight
-
 " Append template to new C++ files
 " autocmd BufNewFile *.cpp 0r ~/.vim/templates/skeleton.cpp
 " autocmd BufNewFile *.c 0r ~/.vim/templates/skeleton.c
@@ -110,6 +102,8 @@ Plugin 'neoclide/coc.nvim' "conquer of completion
 " Plugin 'turbio/bracey.vim' "for live server 
 
 Plugin 'tpope/vim-commentary' " for comments
+
+Plugin 'morhetz/gruvbox' " for gruvbox color theme
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -174,3 +168,4 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
+colorscheme gruvbox

@@ -126,7 +126,7 @@ alias e='vim'
 alias cat='batcat'
 alias nix='nix-env'
 alias nixsh='nix-shell'
-# alias tmux='tmux -u'
+alias tmux='tmux -u'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
