@@ -1,35 +1,15 @@
-
-
-# ░░░██████╗░░█████╗░░██████╗██╗░░██╗██████╗░░█████╗░
-# ░░░██╔══██╗██╔══██╗██╔════╝██║░░██║██╔══██╗██╔══██╗
-# ░░░██████╦╝███████║╚█████╗░███████║██████╔╝██║░░╚═╝
-# ░░░██╔══██╗██╔══██║░╚═══██╗██╔══██║██╔══██╗██║░░██╗
-# ██╗██████╦╝██║░░██║██████╔╝██║░░██║██║░░██║╚█████╔╝
-# ╚═╝╚═════╝░╚═╝░░╚═╝╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░
-
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
-
-# for starship prompt
-eval "$(starship init bash)"
-
-PROMPT_DIRTRIM=1
-export GOPATH=~/go
-
-# bun.sh
-export BUN_INSTALL="$HOME/.bun" 
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# commit.sh
-export COMMIT_INSTALL="$HOME/.commit" 
-export PATH="$COMMIT_INSTALL/bin:$PATH"
 
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
       *) return;;
 esac
+
+# Go Path
+export GOPATH=~/go
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -108,25 +88,20 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # colored GCC warnings and errors
-export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
-alias l='ls -color'
+alias l='ls -CF'
 
-export PATH=$PATH:/home/kunal/scripts/
-export JDK_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64
-
-alias make='make.sh'
 alias gedit='gnome-text-editor'
-alias cm='cm.sh'
-alias rm="trash-rm"
-alias e='vim'
 alias cat='batcat'
-alias nix='nix-env'
-alias nixsh='nix-shell'
 alias tmux='tmux -u'
+
+# Alias for docker and docker-compose
+alias d='docker'
+alias dc='docker-compose'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -151,53 +126,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
-
-### don't autostart fish if we alredy did it.
-if [ -z "$STARTEDFISH" ];
-then
-    export STARTEDFISH=1;
-    exec fish;
-    exit;
-fi
-###-begin-pm2-completion-###
-### credits to npm for the completion file model
-#
-# Installation: pm2 completion >> ~/.bashrc  (or ~/.zshrc)
-#
-
-COMP_WORDBREAKS=${COMP_WORDBREAKS/=/}
-COMP_WORDBREAKS=${COMP_WORDBREAKS/@/}
-export COMP_WORDBREAKS
-
-if type complete &>/dev/null; then
-  _pm2_completion () {
-    local si="$IFS"
-    IFS=$'\n' COMPREPLY=($(COMP_CWORD="$COMP_CWORD" \
-                           COMP_LINE="$COMP_LINE" \
-                           COMP_POINT="$COMP_POINT" \
-                           pm2 completion -- "${COMP_WORDS[@]}" \
-                           2>/dev/null)) || return $?
-    IFS="$si"
-  }
-  complete -o default -F _pm2_completion pm2
-elif type compctl &>/dev/null; then
-  _pm2_completion () {
-    local cword line point words si
-    read -Ac words
-    read -cn cword
-    let cword-=1
-    read -l line
-    read -ln point
-    si="$IFS"
-    IFS=$'\n' reply=($(COMP_CWORD="$cword" \
-                       COMP_LINE="$line" \
-                       COMP_POINT="$point" \
-                       pm2 completion -- "${words[@]}" \
-                       2>/dev/null)) || return $?
-    IFS="$si"
-  }
-  compctl -K _pm2_completion + -f + pm2
-fi
-###-end-pm2-completion-###
