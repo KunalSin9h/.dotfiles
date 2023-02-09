@@ -10,6 +10,19 @@ esac
 
 # Go Path
 export GOPATH=~/go
+# Go Binaries
+export PATH=$PATH:/home/kunal/go/bin
+# Go 1.20 Binaries
+export PATH=$PATH:/home/kunal/sdk/go1.20/bin
+
+# Shells in PATH
+# https://github.com/KunalSin9h/shells
+export PATH=$PATH:/media/kunal/HardDrive/GitHub/shells
+
+# Exec Tmux by default
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -102,6 +115,9 @@ alias tmux='tmux -u'
 # Alias for docker and docker-compose
 alias d='docker'
 alias dc='docker-compose'
+
+# Btop
+alias btop='btop --utf-force'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
