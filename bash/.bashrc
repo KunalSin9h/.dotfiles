@@ -21,8 +21,9 @@ export PATH=$PATH:/media/kunal/HardDrive/GitHub/shells
 
 # Exec Tmux by default
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux
+  tmux new-session
 fi
+
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
