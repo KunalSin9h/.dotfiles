@@ -20,9 +20,9 @@ export PATH=$PATH:/home/kunal/sdk/go1.20/bin
 export PATH=$PATH:/media/kunal/HardDrive/GitHub/shells
 
 # Exec Tmux by default
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  tmux new-session
-fi
+# if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+#   tmux new-session
+# fi
 
 
 # don't put duplicate lines or lines starting with space in the history.
