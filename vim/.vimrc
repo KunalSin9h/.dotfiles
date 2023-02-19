@@ -49,6 +49,9 @@ set ttimeoutlen=0       "time to run command
 set wildmenu            "adv. menu for auto-comp.
 set splitbelow splitright
 
+set background=dark
+colorscheme hyper 
+
 "Cursor Style on diff mode(Insert & Normal)
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
@@ -103,7 +106,7 @@ Plugin 'neoclide/coc.nvim' "conquer of completion
 
 Plugin 'tpope/vim-commentary' " for comments
 
-Plugin 'morhetz/gruvbox' " for gruvbox color theme
+" Plugin 'morhetz/gruvbox' " for gruvbox color theme
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -172,4 +175,3 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-colorscheme gruvbox
