@@ -1,0 +1,35 @@
+# Mull the terminal based email client
+# https://www.youtube.com/watch?v=2jMInHnpNfQ
+
+# How to securely set mutt passwords
+# https://unix.stackexchange.com/questions/20570/mutt-how-to-safely-store-password
+source "gpg -d ~/.mutt/passwords.gpg |"
+# in ~/.mutt/passwords file
+# ```
+# set imap_pass="*********"
+# set smtp_pass="*********"
+# ```
+#--------------------------------------------------------------------------------
+
+# color scheme
+source colors.muttrc
+
+set folder = "imaps://kunalsin9h@gmail.com@imap.gmail.com:993"
+
+set  smtp_url = "smtps://kunalsin9h@gmail.com@smtp.gmail.com:465"
+#  smpt => 587
+#  smpts => 465 (Encripted)
+
+set from = "kunalsin9h@gmail.com"
+set realname = "Kunal Singh"
+
+set spoolfile = "+INBOX"
+set record = "+Sent"
+set trash = "+Trash"
+set postponed = "+Drafts"
+
+mailboxes =INBOX =Sent =Trash  =Drafts
+
+bind index G imap-fetch-mail
+
+set editor = "vim"
