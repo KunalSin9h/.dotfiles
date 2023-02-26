@@ -8,6 +8,8 @@ case $- in
       *) return;;
 esac
 
+export EDITOR=vim
+
 # Go Path
 export GOPATH=~/go
 # Go Binaries
@@ -112,6 +114,7 @@ alias l='ls -CF'
 alias gedit='gnome-text-editor'
 alias cat='batcat'
 alias tmux='tmux -u'
+alias mutt='neomutt'
 
 # Alias for docker and docker-compose
 alias d='docker'
