@@ -118,9 +118,6 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 
-"Disable new window popin when YouCompleteMe suggest something
-"set completeopt-=preview
-
 "General shotcut for compiling and running
 " you need cp.sh in computer to work 
 set makeprg=cm.sh\ %:r
@@ -153,31 +150,5 @@ let g:UltiSnipsJumpForwardTrigger="<c-k>"
 let g:UltiSnipsJumpBackwardTrigger="<c-h>"
 let g:UltiSnipsEditSplit="vertical"
 
-" use <tab> for trigger completion and navigate to the next complete item
-" function! s:check_back_space() abort
-"   let col = col('.') - 1
-"   return !col || getline('.')[col - 1]  =~ '\s'
-" endfunction
-" 
-" inoremap <silent><expr> <tab>
-"       \ pumvisible() ? "\<c-n>" :
-"       \ <sid>check_back_space() ? "\<tab>" :
-"       \ coc#refresh()
-
-" Key map for Coc Explorer
-map <space>e <Cmd>CocCommand explorer<CR>
-
-" Go lsp - add missing imports on save
-" autocmd bufwritepre *.go :silent call cocaction('runcommand', 'editor.action.organizeimport')
-
-" inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-" inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
 inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
 inoremap <expr> <S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
