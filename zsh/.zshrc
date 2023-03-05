@@ -117,3 +117,7 @@ alias mutt='neomutt'
 alias d='docker'
 alias dc='docker-compose'
 
+
+# commit
+export COMMIT_INSTALL="$HOME/.commit"
+export PATH="$COMMIT_INSTALL/bin:$PATH"

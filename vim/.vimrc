@@ -16,6 +16,9 @@ set ttyfast                     " Fast terminal
 set foldmethod=syntax
 set background=dark
 
+
+set signcolumn=yes
+
 " Move between open buffers
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprev<CR>
@@ -103,6 +106,8 @@ Plugin 'honza/vim-snippets'
 Plugin 'bling/vim-bufferline' "show the list of buffers in the command bar
 Plugin 'delimitMate.vim' "completion for quotes, parens, brackets
 
+Plugin 'airblade/vim-gitgutter'
+
 "https://www.youtube.com/watch?v=7-dfpQ5sexk
 "do it like this else just "yarn install" wont work
 " "yarn install --ignore-engines" will work
@@ -152,3 +157,10 @@ let g:UltiSnipsEditSplit="vertical"
 
 inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
 inoremap <expr> <S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
+
+
+highlight clear SignColumn
+highlight GitGutterAdd    guifg=#009900 ctermfg=2
+highlight GitGutterChange guifg=#bbbb00 ctermfg=3
+highlight GitGutterDelete guifg=#ff2222 ctermfg=1
+
