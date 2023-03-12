@@ -22,7 +22,6 @@ set foldmethod=syntax
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprev<CR>
 
-" " Highlite the current line line number
 
 syntax on
 
@@ -52,9 +51,6 @@ set title               "File title
 set ttimeoutlen=0       "time to run command
 set wildmenu            "adv. menu for auto-comp.
 set splitbelow splitright
-
-hi clear CursorLine
-hi CursorLineNR cterm=bold
 
 set background=dark
 colorscheme hyper 
@@ -162,9 +158,12 @@ let g:UltiSnipsEditSplit="vertical"
 inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
 inoremap <expr> <S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
 
-
 highlight clear SignColumn
 highlight GitGutterAdd    guifg=#009900 ctermfg=2
 highlight GitGutterChange guifg=#bbbb00 ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 
+
+set cursorline
+highlight CursorLine term=bold cterm=NONE ctermbg=none  ctermfg=none gui=bold
+highlight CursorLineNr term=bold cterm=none ctermbg=none ctermfg=yellow gui=bold
