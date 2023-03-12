@@ -6,22 +6,24 @@
 " ██╗░░╚██╔╝░░██║██║░╚═╝░██║██║░░██║╚█████╔╝
 " ╚═╝░░░╚═╝░░░╚═╝╚═╝░░░░░╚═╝╚═╝░░╚═╝░╚════╝░
 
+" Hybrid
+
 "General Editor Setting
 set autoread                    " Auto reload file after external commandset relativenumber
 set binary                      " Enable binary support
-" set number
-set relativenumber                       " set no relativenumber
+
+set number relativenumber                       " set no relativenumber
 set ttyfast                     " Fast terminal
 
 set foldmethod=syntax
 set background=dark
 
 
-set signcolumn=yes
-
 " Move between open buffers
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprev<CR>
+
+" " Highlite the current line line number
 
 syntax on
 
@@ -44,13 +46,16 @@ set encoding=utf-8
 
 set nocompatible
 set belloff=all
-set signcolumn=number
+set signcolumn=yes
 
 set mouse=a             "mouse support
 set title               "File title
 set ttimeoutlen=0       "time to run command
 set wildmenu            "adv. menu for auto-comp.
 set splitbelow splitright
+
+hi clear CursorLine
+hi CursorLineNR cterm=bold
 
 set background=dark
 colorscheme hyper 
