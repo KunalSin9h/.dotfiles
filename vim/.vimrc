@@ -16,7 +16,6 @@ set number relativenumber                       " set no relativenumber
 set ttyfast                     " Fast terminal
 
 set foldmethod=syntax
-set background=dark
 
 
 " Move between open buffers

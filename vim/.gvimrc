@@ -8,6 +8,7 @@
 " ╚═╝░╚═════╝░░░░╚═╝░░░╚═╝╚═╝░░░░░╚═╝╚═╝░░╚═╝░╚════╝░
 
 set guifont=Cascadia\ code\ 14
-colorscheme gruvbox
+set background=dark
+colorscheme hyper
 set guioptions -=m
 set guioptions -=T

@@ -120,3 +120,6 @@ alias dc='docker-compose'
 # commit
 export COMMIT_INSTALL="$HOME/.commit"
 export PATH="$COMMIT_INSTALL/bin:$PATH"
+
+export EDITOR=vim
+
