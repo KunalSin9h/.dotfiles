@@ -8,6 +8,9 @@ export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:/home/kunal/.nix-profile/bin:/nix/var/nix/profiles/default/bin
 export PATH=$PATH:/snap/bin:/home/kunal/go/bin:/home/kunal/sdk/go1.20/bin:/media/kunal/HardDrive/GitHub/shells
 
+# coc extensions
+export PATH=$PATH:/home/kunal/.config/coc/extensions
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME

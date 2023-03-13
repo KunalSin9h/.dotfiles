@@ -21,6 +21,10 @@ export PATH=$PATH:/home/kunal/sdk/go1.20/bin
 # https://github.com/KunalSin9h/shells
 export PATH=$PATH:/media/kunal/HardDrive/GitHub/shells
 
+
+# Adding coc extensions to path
+export path=$path:/home/kunal/.config/coc/extensions
+
 # Exec Tmux by default
 # if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
 #   tmux new-session
