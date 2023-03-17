@@ -167,3 +167,7 @@ highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 set cursorline
 highlight CursorLine term=bold cterm=NONE ctermbg=none  ctermfg=none gui=bold
 highlight CursorLineNr term=bold cterm=none ctermbg=none ctermfg=yellow gui=bold
+
+" Map J and K keys to move selected block up and down
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
