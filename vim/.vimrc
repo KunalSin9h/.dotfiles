@@ -94,15 +94,15 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'git://git.wincent.com/command-t.git'
+"Plugin 'tpope/vim-fugitive'
+"Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-Plugin 'SirVer/ultisnips'
+"Plugin 'SirVer/ultisnips'
 "Plugin 'Valloric/YouCompleteMe'
-Plugin 'tpope/vim-dispatch'
+"Plugin 'tpope/vim-dispatch'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
-Plugin 'honza/vim-snippets'
+"Plugin 'honza/vim-snippets'
 Plugin 'bling/vim-bufferline' "show the list of buffers in the command bar
 Plugin 'delimitMate.vim' "completion for quotes, parens, brackets
 
@@ -125,10 +125,10 @@ filetype plugin indent on    " required
 
 "General shotcut for compiling and running
 " you need cp.sh in computer to work 
-set makeprg=cm.sh\ %:r
-autocmd filetype cpp nnoremap <F5> :w <bar> Make <CR> 
-autocmd filetype cpp nnoremap <F6> :vertical terminal ++shell ++cols=40 ./%:r<CR>
-autocmd filetype cpp nnoremap <F8> :!./%:r<CR>
+"set makeprg=cm.sh\ %:r
+"autocmd filetype cpp nnoremap <F5> :w <bar> Make <CR> 
+"autocmd filetype cpp nnoremap <F6> :vertical terminal ++shell ++cols=40 ./%:r<CR>
+"autocmd filetype cpp nnoremap <F8> :!./%:r<CR>
 
 "CodeForces specific
 nnoremap <F9> :vertical terminal ++shell ++cols=40 cf test<CR>
