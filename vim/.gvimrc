@@ -7,7 +7,7 @@
 " ██╗╚██████╔╝░░╚██╔╝░░██║██║░╚═╝░██║██║░░██║╚█████╔╝
 " ╚═╝░╚═════╝░░░░╚═╝░░░╚═╝╚═╝░░░░░╚═╝╚═╝░░╚═╝░╚════╝░
 
-set guifont=Cascadia\ code\ 14
+set guifont=Source\ code\ pro\ 14
 set background=dark
 colorscheme hyper
 set guioptions -=m

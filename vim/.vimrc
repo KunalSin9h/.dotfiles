@@ -6,7 +6,7 @@
 " ██╗░░╚██╔╝░░██║██║░╚═╝░██║██║░░██║╚█████╔╝
 " ╚═╝░░░╚═╝░░░╚═╝╚═╝░░░░░╚═╝╚═╝░░╚═╝░╚════╝░
 
-" Hybrid
+
 
 "General Editor Setting
 set autoread                    " Auto reload file after external commandset relativenumber
@@ -53,7 +53,7 @@ set wildmenu            "adv. menu for auto-comp.
 set splitbelow splitright
 
 set background=dark
-colorscheme hyper 
+"colorscheme hyper 
 
 set spelllang=en_gb
 set spellfile=~/.vim/spell.en.utf-8.add
