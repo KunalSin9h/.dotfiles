@@ -1,4 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/kunal/Documents'
+let g:netrw_dirhist_0='/home/kunal/.dotfiles/alacritty'
+let g:netrw_dirhist_9='/home/kunal/.dotfiles'
+let g:netrw_dirhist_8='/home/kunal/.dotfiles/alacritty'
+let g:netrw_dirhist_7='/mnt/hdard/houseware---backend-engineering-octernship-KunalSin9h/cmd/api'
+let g:netrw_dirhist_6='/mnt/hdard/houseware---backend-engineering-octernship-KunalSin9h/cmd'
+let g:netrw_dirhist_5='/mnt/hdard/houseware---backend-engineering-octernship-KunalSin9h'
+let g:netrw_dirhist_4='/mnt/hdard/houseware---backend-engineering-octernship-KunalSin9h/data'
+let g:netrw_dirhist_3='/mnt/hdard/houseware---backend-engineering-octernship-KunalSin9h'
 let g:netrw_dirhist_2='/home/kunal/.dotfiles/tmux'
-let g:netrw_dirhist_1='/tmp'

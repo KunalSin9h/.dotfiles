@@ -3,7 +3,10 @@ PS1="%B%{$fg[red]%}[%{$fg[white]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[white]%
 
 # Exports
 export EXA_COLORS="da=1;34"
+export FZF_DEFAULT_COMMAND="rg --files --hidden -g'!.git' -g'!.cache' -g'!go' -g'!.vscode' -g'!view'"
 export PATH=$PATH:/home/kunal/scripts
+
+# Source
 
 # History in cache directory:
 HISTSIZE=10000

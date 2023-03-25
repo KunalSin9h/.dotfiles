@@ -94,8 +94,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-"Plugin 'tpope/vim-fugitive'
-"Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'tpope/vim-fugitive'
+" Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Plugin 'SirVer/ultisnips'
 "Plugin 'Valloric/YouCompleteMe'
@@ -171,3 +171,6 @@ highlight CursorLineNr term=bold cterm=none ctermbg=none ctermfg=yellow gui=bold
 " Map J and K keys to move selected block up and down
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
+
+" Python Syntax Highliting
+let python_highlight_all = 1
