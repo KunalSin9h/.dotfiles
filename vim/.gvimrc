@@ -9,6 +9,6 @@
 
 set guifont=Source\ code\ pro\ 14
 set background=dark
-colorscheme hyper
+colorscheme  abstract
 set guioptions -=m
 set guioptions -=T

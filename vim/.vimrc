@@ -113,8 +113,6 @@ Plugin 'airblade/vim-gitgutter'
 " "yarn install --ignore-engines" will work
 Plugin 'neoclide/coc.nvim' "conquer of completion
 
-" Plugin 'turbio/bracey.vim' "for live server 
-
 Plugin 'tpope/vim-commentary' " for comments
 
 " Plugin 'morhetz/gruvbox' " for gruvbox color theme
@@ -172,5 +170,3 @@ highlight CursorLineNr term=bold cterm=none ctermbg=none ctermfg=yellow gui=bold
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
-" Python Syntax Highliting
-let python_highlight_all = 1
