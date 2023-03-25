@@ -3,6 +3,7 @@ PS1="%B%{$fg[red]%}[%{$fg[white]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[white]%
 
 # Exports
 export EXA_COLORS="da=1;34"
+export PATH=$PATH:/home/kunal/scripts
 
 # History in cache directory:
 HISTSIZE=10000
@@ -13,6 +14,8 @@ HISTFILE=~/.cache/zsh/history
 alias ls='exa'
 alias ll='ls -alF'
 alias la='ls -a'
+alias tr='ls -T'
+alias vi='vim'
 alias grep='grep --color=auto'
 
 # Basic auto/tab complete:
@@ -24,6 +27,7 @@ _comp_options+=(globdots)		# Include hidden files.
 
 # vi mode
 bindkey -v
+bindkey '^R' history-incremental-search-backward
 export KEYTIMEOUT=1
 
 # Use vim keys in tab complete menu:
