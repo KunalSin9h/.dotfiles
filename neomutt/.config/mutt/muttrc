@@ -3,13 +3,16 @@
 
 # How to securely set mutt passwords
 # https://unix.stackexchange.com/questions/20570/mutt-how-to-safely-store-password
-source "gpg -d ~/.mutt/passwords.gpg |"
+#source "gpg -d ~/.mutt/passwords.gpg |"
 # in ~/.mutt/passwords file
 # ```
 # set imap_pass="*********"
 # set smtp_pass="*********"
 # ```
 #--------------------------------------------------------------------------------
+
+# Mutt passwords
+source "gpg -d ~/.mutt/passwords.gpg |"
 
 # color scheme
 source colors.muttrc

@@ -7,7 +7,8 @@
 !
 ! Remember to run `xrdb < .Xresources` after changing anything.
 !
-XTerm*XftFont:  Source Code Pro:size=12:antialias=true:style=Regular
+/* XTerm*XftFont:  Source Code Pro:size=12:antialias=true:style=Regular */
+XTerm*XftFont:  JetBrainsMono Nerd Font:size=13:style=Regular
 XTerm.termName: xterm-256color
 
 ! Color of UI Components
@@ -92,8 +93,8 @@ XTerm*Form.menubar.vertDistance: 0
 !XTerm*Form.menubar.Thickness:  0
 
 ! Fonts
-XTerm*vt100.faceName:           Source Code Pro:size=14:antialias=true:style=Regular
-XTerm*vt100.boldFont:           Source Code Pro:size=14:antialias=true:style=Bold
+XTerm*vt100.faceName:           JetBrainsMono Nerd Font:size=13:style=Regular
+XTerm*vt100.boldFont:           JetBrainsMono Nerd Font:size=13:style=Bold
 
 ! Size and Title
 XTerm*vt100.geometry:           100x30

@@ -2,7 +2,8 @@ autoload -U colors && colors
 # PS1="%B%{$fg[red]%}[%{$fg[white]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[white]%}%~%{$fg[red]%}]%{$reset_color%}
 # $%b "
 
-PS1="%B%{$fg[red]%}[%{$fg[white]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[gray]%}%~%{$fg[red]%}]%{$reset_color%}
+PS1="
+%B%{$fg[red]%}[%{$fg[white]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[gray]%}%~%{$fg[red]%}]%{$reset_color%}
 $%b "
 
 # Exports
@@ -23,6 +24,7 @@ alias ll='ls -alF'
 alias la='ls -a'
 alias tr='ls -T'
 alias vi='vim'
+alias mutt="neomutt"
 alias grep='grep --color=auto'
 
 # Basic auto/tab complete:

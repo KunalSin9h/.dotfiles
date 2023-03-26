@@ -226,7 +226,7 @@ bindsym $mod+r mode "resize"
 bindsym $mod+Escape exec --no-startup-id i3lock -c 000000 && xset dpms force off
 #bindsym $mod+Escape exec --no-startup-id xset dpms force off
 
-#Redshift for night light
+#xflux for night light
 exec_always xflux -l -76.9527 -g 166.4895 -k 3500
 
 # background image

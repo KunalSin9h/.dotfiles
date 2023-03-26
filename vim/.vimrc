@@ -117,6 +117,9 @@ Plugin 'tpope/vim-commentary' " for comments
 
 " Plugin 'morhetz/gruvbox' " for gruvbox color theme
 
+" Navigation with tmux support
+Plugin 'christoomey/vim-tmux-navigator'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 
