@@ -1,0 +1,5 @@
+vim.keymap.set('n', '<leader>tt', ':FloatermToggle<CR>')
+vim.keymap.set('n', '<leader>to', ':FloatermNew<CR>')
+vim.keymap.set('n', '<leader>tn', ':FloatermNext<CR>')
+vim.keymap.set('n', '<leader>tp', ':FloatermPrev<CR>')
+vim.keymap.set('n', '<leader>tr', ':FloatermNew ranger --cmd="cd ~"<CR>')

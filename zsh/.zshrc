@@ -26,6 +26,11 @@ alias tr='ls -T'
 alias vi='vim'
 alias mutt="neomutt"
 alias grep='grep --color=auto'
+alias cls='clear'
+
+# Directory Shortcut
+alias _hd='cd /mnt/hdard/'
+alias _gp='cd /mnt/hdard/github/personal'
 
 # Basic auto/tab complete:
 autoload -U compinit

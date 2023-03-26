@@ -137,7 +137,7 @@ nnoremap <F12> :vertical terminal ++shell ++cols=40 cf submit<CR>
 
 "vim utility
 " :q with <F2>
-nnoremap <F2> :q <CR>
+nnoremap <F2> :!rustfmt % <CR>
 "ctrl + t -> terminal
 nnoremap <c-t> :terminal <CR>
 
