@@ -1,6 +1,4 @@
 autoload -U colors && colors
-# PS1="%B%{$fg[red]%}[%{$fg[white]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[white]%}%~%{$fg[red]%}]%{$reset_color%}
-# $%b "
 
 PS1="
 %B%{$fg[red]%}[%{$fg[white]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[gray]%}%~%{$fg[red]%}]%{$reset_color%}
@@ -28,9 +26,15 @@ alias mutt="neomutt"
 alias grep='grep --color=auto'
 alias cls='clear'
 
+# The 2>/dev/null at the end of the find command tells your shell to redirect the error messages (FD #2) to /dev/null, so you don’t have to see them on screen.
+alias sd="cd / && cd \$(find * -type d -print 2>/dev/null | fzf)"
+alias sf="cd / && vim \$(find . -type f -print 2>/dev/null | fzf)"
+
 # Directory Shortcut
 alias _hd='cd /mnt/hdard/'
 alias _gp='cd /mnt/hdard/github/personal'
+alias srishti='cd /mnt/hdard/srishti'
+
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -97,7 +101,7 @@ SAVEHIST=1000
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/kunal/.zshrc'
 
-# Plugins 
+# Plugins
 # 1. zsh-syntax-highlighting
 # -> sudo pacman -S zsh-syntax-highlighting
 # Load zsh-syntax-highlighting; should be last.
