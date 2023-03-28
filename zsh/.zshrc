@@ -30,12 +30,6 @@ alias cls='clear'
 alias sd="cd / && cd \$(find * -type d -print 2>/dev/null | fzf)"
 alias sf="cd / && vim \$(find . -type f -print 2>/dev/null | fzf)"
 
-# Directory Shortcut
-alias _hd='cd /mnt/hdard/'
-alias _gp='cd /mnt/hdard/github/personal'
-alias srishti='cd /mnt/hdard/srishti'
-
-
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select
