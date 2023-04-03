@@ -59,5 +59,8 @@ require("lspconfig").jsonls.setup {
   capabilities = capabilities,
 }
 
+require("lspconfig").tailwindcss.setup {
+  capabilities = capabilities,
+}
 
 

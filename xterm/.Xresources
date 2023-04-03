@@ -103,8 +103,8 @@ XTerm*title:                    Terminal
 
 ! Terminal Colors
 XTerm*vt100.background:     #212121
-XTerm*vt100.foreground:     #80FF80
-XTerm*cursorColor:          #ffffff
+XTerm*vt100.foreground:     #ffffff
+XTerm*cursorColor:          #000000
 
 ! I like bold items to be in bright white.
 XTerm*veryBoldColors:       4

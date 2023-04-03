@@ -42,6 +42,8 @@ bindkey -v
 bindkey '^R' history-incremental-search-backward
 export KEYTIMEOUT=1
 
+export EDITOR=vim
+
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history

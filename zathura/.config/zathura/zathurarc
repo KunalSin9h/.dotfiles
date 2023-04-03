@@ -1,1 +1,2 @@
 map <C-i> recolor
+set sandbox none

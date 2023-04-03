@@ -47,7 +47,6 @@ local plugins = {
   'Raimondi/delimitMate',
   'voldikss/vim-floaterm',  -- floating terminal
   'tpope/vim-commentary'
-
 }
 
 local opts = {}
