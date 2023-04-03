@@ -25,6 +25,7 @@ alias vi='vim'
 alias mutt="neomutt"
 alias grep='grep --color=auto'
 alias cls='clear'
+alias hx='helix'
 
 # The 2>/dev/null at the end of the find command tells your shell to redirect the error messages (FD #2) to /dev/null, so you don’t have to see them on screen.
 alias sd="cd / && cd \$(find * -type d -print 2>/dev/null | fzf)"
