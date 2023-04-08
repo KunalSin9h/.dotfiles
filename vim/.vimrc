@@ -84,7 +84,7 @@ augroup remember_folds
 augroup END
 
 " Append template to new C++ files
-" autocmd BufNewFile *.cpp 0r ~/.vim/templates/skeleton.cpp
+autocmd BufNewFile *.cpp 0r ~/.vim/templates/skeleton.cpp
 " autocmd BufNewFile *.c 0r ~/.vim/templates/skeleton.c
 
 set nocompatible              " be iMproved, required
@@ -99,7 +99,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Plugin 'SirVer/ultisnips'
 "Plugin 'Valloric/YouCompleteMe'
-"Plugin 'tpope/vim-dispatch'
+Plugin 'tpope/vim-dispatch'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
 "Plugin 'honza/vim-snippets'
@@ -126,18 +126,17 @@ filetype plugin indent on    " required
 
 "General shotcut for compiling and running
 " you need cp.sh in computer to work 
-"set makeprg=cm.sh\ %:r
-"autocmd filetype cpp nnoremap <F5> :w <bar> Make <CR> 
-"autocmd filetype cpp nnoremap <F6> :vertical terminal ++shell ++cols=40 ./%:r<CR>
-"autocmd filetype cpp nnoremap <F8> :!./%:r<CR>
+set makeprg=make.sh\ %:r
+autocmd filetype cpp nnoremap <F5> :w <bar> Make <CR> 
+autocmd filetype cpp nnoremap <F6> :vertical terminal ++shell ++cols=40 ./%:r<CR>
+autocmd filetype cpp nnoremap <F8> :!./%:r<CR>
 
 "CodeForces specific
 nnoremap <F9> :vertical terminal ++shell ++cols=40 cf test<CR>
 nnoremap <F12> :vertical terminal ++shell ++cols=40 cf submit<CR>
 
 "vim utility
-" :q with <F2>
-nnoremap <F2> :!rustfmt % <CR>
+nnoremap <F2> :q <CR>
 "ctrl + t -> terminal
 nnoremap <c-t> :terminal <CR>
 

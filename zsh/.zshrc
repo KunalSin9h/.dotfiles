@@ -8,6 +8,7 @@ $%b "
 export EXA_COLORS="da=1;34"
 export FZF_DEFAULT_COMMAND="rg --files --hidden -g'!.git' -g'!.cache' -g'!go' -g'!.vscode' -g'!view'"
 export PATH=$PATH:/home/kunal/scripts
+export PATH=$PATH:/home/kunal/.config/coc/extensions/coc-clangd-data/install/15.0.6/clangd_15.0.6/bin/clangd
 
 # Source
 
@@ -26,6 +27,7 @@ alias mutt="neomutt"
 alias grep='grep --color=auto'
 alias cls='clear'
 alias hx='helix'
+alias cont='cd /mnt/hdard/cp/contest'
 
 # The 2>/dev/null at the end of the find command tells your shell to redirect the error messages (FD #2) to /dev/null, so you don’t have to see them on screen.
 alias sd="cd / && cd \$(find * -type d -print 2>/dev/null | fzf)"
