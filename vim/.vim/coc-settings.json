@@ -1,0 +1,14 @@
+{
+  "clangd.path": "/usr/bin/clangd",
+  "clangd.fallbackFlags": [ "-std=c++17" ],
+  "cSpell.userWords": [
+    "actix",
+    "dealloc",
+    "kunal",
+    "runtimes",
+    "singh",
+    "suger",
+    "trpc",
+    "web"
+  ]
+}
