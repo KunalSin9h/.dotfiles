@@ -52,8 +52,9 @@ set ttimeoutlen=0       "time to run command
 set wildmenu            "adv. menu for auto-comp.
 set splitbelow splitright
 
-set background=dark
-colorscheme abstract
+set background=light
+let g:solarized_termcolors=256
+colorscheme solarized
 
 set spelllang=en_gb
 set spellfile=~/.vim/spell.en.utf-8.add
@@ -128,8 +129,8 @@ filetype plugin indent on    " required
 " you need cp.sh in computer to work 
 set makeprg=make.sh\ %:r
 autocmd filetype cpp nnoremap <F5> :w <bar> Make <CR> 
-autocmd filetype cpp nnoremap <F6> :vertical terminal ++shell ++cols=40 ./%:r<CR>
-autocmd filetype cpp nnoremap <F8> :!./%:r<CR>
+autocmd filetype cpp nnoremap <F6> :vertical terminal ++shell ++cols=40 ./%:r.out<CR>
+autocmd filetype cpp nnoremap <F8> :!./%:r.out<CR>
 
 "CodeForces specific
 nnoremap <F9> :vertical terminal ++shell ++cols=40 cf test<CR>
@@ -166,7 +167,7 @@ highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 
 set cursorline
 highlight CursorLine term=bold cterm=NONE ctermbg=none  ctermfg=none gui=bold
-highlight CursorLineNr term=bold cterm=none ctermbg=none ctermfg=yellow gui=bold
+highlight CursorLineNr term=bold cterm=none ctermbg=none ctermfg=black gui=bold
 
 " Map J and K keys to move selected block up and down
 vnoremap J :m '>+1<CR>gv=gv
