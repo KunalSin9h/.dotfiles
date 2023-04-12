@@ -52,9 +52,9 @@ set ttimeoutlen=0       "time to run command
 set wildmenu            "adv. menu for auto-comp.
 set splitbelow splitright
 
-set background=light
-let g:solarized_termcolors=256
-colorscheme solarized
+set background=dark
+" let g:solarized_termcolors=256
+colorscheme gruvbox
 
 set spelllang=en_gb
 set spellfile=~/.vim/spell.en.utf-8.add
