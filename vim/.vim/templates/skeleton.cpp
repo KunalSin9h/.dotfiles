@@ -1,12 +1,6 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-#ifndef LOCAL
-#define dbg(x...) 
-#endif
-
 int main(){
-    cin.tie(0)->sync_with_stdio(0); 
-
     return 0;
 }

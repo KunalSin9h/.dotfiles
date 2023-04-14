@@ -22,7 +22,6 @@ set foldmethod=syntax
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprev<CR>
 
-
 syntax on
 
 set nohlsearch
@@ -54,7 +53,7 @@ set splitbelow splitright
 
 set background=dark
 " let g:solarized_termcolors=256
-colorscheme gruvbox
+colorscheme embark
 
 set spelllang=en_gb
 set spellfile=~/.vim/spell.en.utf-8.add
@@ -134,7 +133,7 @@ autocmd filetype cpp nnoremap <F8> :!./%:r.out<CR>
 
 "CodeForces specific
 nnoremap <F9> :vertical terminal ++shell ++cols=40 cf test<CR>
-nnoremap <F12> :vertical terminal ++shell ++cols=40 cf submit<CR>
+nnoremap <F12> :vertical terminal ++shell ++cols=40 cfsubmit<CR>
 
 "vim utility
 nnoremap <F2> :q <CR>
