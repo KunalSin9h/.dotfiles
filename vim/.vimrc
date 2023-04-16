@@ -17,7 +17,6 @@ set ttyfast                     " Fast terminal
 
 set foldmethod=syntax
 
-
 " Move between open buffers
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprev<CR>
@@ -51,9 +50,12 @@ set ttimeoutlen=0       "time to run command
 set wildmenu            "adv. menu for auto-comp.
 set splitbelow splitright
 
+"set background=light
+"let g:solarized_termcolors=256
+"colorscheme solarized
+
 set background=dark
-" let g:solarized_termcolors=256
-colorscheme embark
+colorscheme gruvbox
 
 set spelllang=en_gb
 set spellfile=~/.vim/spell.en.utf-8.add
@@ -97,12 +99,13 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 " Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-"Plugin 'SirVer/ultisnips'
-"Plugin 'Valloric/YouCompleteMe'
+
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
 Plugin 'tpope/vim-dispatch'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
-"Plugin 'honza/vim-snippets'
 Plugin 'bling/vim-bufferline' "show the list of buffers in the command bar
 Plugin 'delimitMate.vim' "completion for quotes, parens, brackets
 
@@ -115,8 +118,6 @@ Plugin 'neoclide/coc.nvim' "conquer of completion
 
 Plugin 'tpope/vim-commentary' " for comments
 
-" Plugin 'morhetz/gruvbox' " for gruvbox color theme
-
 " Navigation with tmux support
 Plugin 'christoomey/vim-tmux-navigator'
 
@@ -125,7 +126,7 @@ filetype plugin indent on    " required
 
 
 "General shotcut for compiling and running
-" you need cp.sh in computer to work 
+" you need make.sh in computer to work 
 set makeprg=make.sh\ %:r
 autocmd filetype cpp nnoremap <F5> :w <bar> Make <CR> 
 autocmd filetype cpp nnoremap <F6> :vertical terminal ++shell ++cols=40 ./%:r.out<CR>
@@ -149,10 +150,9 @@ let g:cpp_experimental_template_highlight = 1
 let g:cpp_concepts_highlight = 1
 let g:cpp_no_function_highlight = 1
 
-"trigger through shift
-let g:UltiSnipsExpandTrigger="<c-j>"
-let g:UltiSnipsJumpForwardTrigger="<c-k>"
-let g:UltiSnipsJumpBackwardTrigger="<c-h>"
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 let g:UltiSnipsEditSplit="vertical"
 
 inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
@@ -165,10 +165,10 @@ highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 
 
 set cursorline
-highlight CursorLine term=bold cterm=NONE ctermbg=none  ctermfg=none gui=bold
-highlight CursorLineNr term=bold cterm=none ctermbg=none ctermfg=black gui=bold
+" highlight CursorLine term=bold cterm=NONE ctermbg=none  ctermfg=none gui=bold
+highlight CursorLineNr term=bold cterm=none ctermbg=none ctermfg=white gui=bold
+
 
 " Map J and K keys to move selected block up and down
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
-

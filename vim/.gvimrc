@@ -7,8 +7,8 @@
 " ██╗╚██████╔╝░░╚██╔╝░░██║██║░╚═╝░██║██║░░██║╚█████╔╝
 " ╚═╝░╚═════╝░░░░╚═╝░░░╚═╝╚═╝░░░░░╚═╝╚═╝░░╚═╝░╚════╝░
 
-set guifont=Source\ code\ pro\ 14
+set guifont=JetBrainsMono\ Nerd\ Font\ 14
 set background=dark
-colorscheme  abstract
+colorscheme  gruvbox
 set guioptions -=m
 set guioptions -=T

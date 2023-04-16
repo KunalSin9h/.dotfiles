@@ -1,5 +1,6 @@
 {
   "clangd.path": "/usr/bin/clangd",
+  "inlayHint.enable": false,
   "clangd.fallbackFlags": [ 
       "-std=c++17",
       "-O2",
