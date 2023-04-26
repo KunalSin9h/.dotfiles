@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/etc'
 let g:netrw_dirhist_6='/home/kunal/scripts'
 let g:netrw_dirhist_5='/home/kunal/.cf'
 let g:netrw_dirhist_4='/mnt/hdard/.github/profile'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_1='/home/kunal/Documents'
 let g:netrw_dirhist_0='/home/kunal/.dotfiles/alacritty'
 let g:netrw_dirhist_9='/home/kunal/.dotfiles'
 let g:netrw_dirhist_8='/home/kunal/.dotfiles/alacritty'
-let g:netrw_dirhist_7='/mnt/hdard/houseware---backend-engineering-octernship-KunalSin9h/cmd/api'

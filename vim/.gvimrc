@@ -9,6 +9,6 @@
 
 set guifont=JetBrainsMono\ Nerd\ Font\ 14
 set background=dark
-colorscheme  gruvbox
+colorscheme  aylin
 set guioptions -=m
 set guioptions -=T
