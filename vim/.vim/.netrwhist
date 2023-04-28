@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =7
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/mnt/hdard/github/personal/kubernetes/basic-manifest'
+let g:netrw_dirhist_8='/mnt/hdard/tutorials/tic-tac-toe'
 let g:netrw_dirhist_7='/etc'
 let g:netrw_dirhist_6='/home/kunal/scripts'
 let g:netrw_dirhist_5='/home/kunal/.cf'
@@ -8,5 +10,3 @@ let g:netrw_dirhist_3='/mnt/hdard/github/personal/learning-rust'
 let g:netrw_dirhist_2='/home/kunal/.dotfiles/neomutt/.config/mutt'
 let g:netrw_dirhist_1='/home/kunal/Documents'
 let g:netrw_dirhist_0='/home/kunal/.dotfiles/alacritty'
-let g:netrw_dirhist_9='/home/kunal/.dotfiles'
-let g:netrw_dirhist_8='/home/kunal/.dotfiles/alacritty'
