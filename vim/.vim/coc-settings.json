@@ -1,6 +1,6 @@
 {
   "clangd.path": "/usr/bin/clangd",
-  "inlayHint.enable": true,
+  "inlayHint.enable": false,
   "clangd.fallbackFlags": [ 
       "-std=c++20",
       "-O2",
@@ -31,6 +31,7 @@
     "dealloc",
     "eoln",
     "gnu",
+    "immut",
     "in",
     "jsvm",
     "key",
@@ -39,6 +40,7 @@
     "kubernetes",
     "kunal",
     "moneymap",
+    "nums",
     "one",
     "pbds",
     "rabbitmq",
