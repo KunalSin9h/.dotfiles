@@ -10,6 +10,9 @@ export FZF_DEFAULT_COMMAND="rg --files --hidden -g'!.git' -g'!.cache' -g'!go' -g
 export PATH=$PATH:/home/kunal/scripts
 export PATH=$PATH:/home/kunal/.config/coc/extensions/coc-clangd-data/install/15.0.6/clangd_15.0.6/bin/clangd
 
+# Using SCCACHE for caching rust builds
+export RUSTC_WRAPPER=/home/kunal/.cargo/bin/sccache
+
 # Source
 
 # History in cache directory:
@@ -106,6 +109,18 @@ zstyle :compinstall filename '/home/kunal/.zshrc'
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
+
+# commit
+export COMMIT_INSTALL="$HOME/.commit"
+export PATH="$COMMIT_INSTALL/bin:$PATH"
+
+# commit
+export COMMIT_INSTALL="$HOME/.commit"
+export PATH="$COMMIT_INSTALL/bin:$PATH"
+
+# commit
+export COMMIT_INSTALL="$HOME/.commit"
+export PATH="$COMMIT_INSTALL/bin:$PATH"
 
 # commit
 export COMMIT_INSTALL="$HOME/.commit"
