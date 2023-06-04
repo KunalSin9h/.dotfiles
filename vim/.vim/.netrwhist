@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/tmp'
 let g:netrw_dirhist_2='/mnt/hdard/github/personal/kiamol/ch05/pi/v1'
 let g:netrw_dirhist_1='/mnt/hdard/github/personal/commit'
 let g:netrw_dirhist_0='/mnt/hdard/github/personal/learning-rust/misc'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_7='/etc'
 let g:netrw_dirhist_6='/home/kunal/scripts'
 let g:netrw_dirhist_5='/home/kunal/.cf'
 let g:netrw_dirhist_4='/mnt/hdard/.github/profile'
-let g:netrw_dirhist_3='/mnt/hdard/github/personal/learning-rust'
