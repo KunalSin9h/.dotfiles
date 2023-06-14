@@ -129,3 +129,7 @@ export PATH="$COMMIT_INSTALL/bin:$PATH"
 # commit
 export COMMIT_INSTALL="$HOME/.commit"
 export PATH="$COMMIT_INSTALL/bin:$PATH"
+
+# commit
+export COMMIT_INSTALL="$HOME/.commit"
+export PATH="$COMMIT_INSTALL/bin:$PATH"
