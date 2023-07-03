@@ -133,3 +133,15 @@ export PATH="$COMMIT_INSTALL/bin:$PATH"
 # commit
 export COMMIT_INSTALL="$HOME/.commit"
 export PATH="$COMMIT_INSTALL/bin:$PATH"
+
+# commit
+export COMMIT_INSTALL="$HOME/.commit"
+export PATH="$COMMIT_INSTALL/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/kunal/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
