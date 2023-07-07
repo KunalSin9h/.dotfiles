@@ -164,10 +164,12 @@ highlight GitGutterAdd    guifg=#009900 ctermfg=2
 highlight GitGutterChange guifg=#bbbb00 ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 
-
-set cursorline
-" highlight CursorLine term=bold cterm=NONE ctermbg=none  ctermfg=none gui=bold
-highlight CursorLineNr term=bold cterm=none ctermbg=none ctermfg=white gui=bold
+hi Normal guibg=NONE ctermbg=NONE
+highlight clear LineNr
+"set cursorline
+"highlight CursorLine term=bold cterm=NONE ctermbg=none  ctermfg=none gui=bold
+"highlight CursorLineNr term=bold cterm=none ctermbg=none ctermfg=white gui=bold 
+"highlight LineNr ctermfg=grey ctermbg=black guibg=black guifg=grey 
 
 
 " Map J and K keys to move selected block up and down
