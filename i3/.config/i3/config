@@ -45,7 +45,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xterm
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -230,9 +230,16 @@ bindsym $mod+Escape exec --no-startup-id i3lock -c 000000 && xset dpms force off
 exec_always xflux -l -76.9527 -g 166.4895 -k 3500
 
 # background image
-exec_always feh --bg-scale /home/kunal/Downloads/i3-wall/hlight.png
+exec_always feh --bg-scale /home/kunal/Downloads/i3-wall/chill.jpg
 
+# Gaps
+for_window [class="^.*"] border pixel 2
+gaps inner 5
+gaps outer 5
+# smart_gaps on
+smart_borders on
 
 #Brightness using "brightnessctl"
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+
