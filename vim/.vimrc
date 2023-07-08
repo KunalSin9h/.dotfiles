@@ -159,18 +159,23 @@ let g:UltiSnipsEditSplit="vertical"
 inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
 inoremap <expr> <S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
 
+let g:gitgutter_sign_added = '+'
+let g:gitgutter_sign_modified = '~'
+let g:gitgutter_sign_removed = 'x'
+let g:gitgutter_sign_removed_first_line = 'x^'
+let g:gitgutter_sign_removed_above_and_below = 'x%'
+let g:gitgutter_sign_modified_removed = '~x'
+
 highlight clear SignColumn
-highlight GitGutterAdd    guifg=#009900 ctermfg=2
-highlight GitGutterChange guifg=#bbbb00 ctermfg=3
-highlight GitGutterDelete guifg=#ff2222 ctermfg=1
+highlight GitGutterAdd    guifg=#009900 ctermfg=2 guibg=NONE
+highlight GitGutterChange guifg=#bbbb00 ctermfg=3 guibg=NONE
+highlight GitGutterDelete guifg=#ff2222 ctermfg=1 guibg=NONE
 
 hi Normal guibg=NONE ctermbg=NONE
 highlight clear LineNr
-"set cursorline
-"highlight CursorLine term=bold cterm=NONE ctermbg=none  ctermfg=none gui=bold
-"highlight CursorLineNr term=bold cterm=none ctermbg=none ctermfg=white gui=bold 
-"highlight LineNr ctermfg=grey ctermbg=black guibg=black guifg=grey 
-
+" set cursorline
+" highlight CursorLine term=bold cterm=NONE ctermbg=none  ctermfg=red gui=bold
+" highlight CursorLineNr term=bold cterm=none ctermbg=none ctermfg=white  gui=none 
 
 " Map J and K keys to move selected block up and down
 vnoremap J :m '>+1<CR>gv=gv

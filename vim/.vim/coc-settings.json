@@ -25,7 +25,9 @@
   "cSpell.userWords": [
     "actix",
     "amqp",
+    "aylin",
     "behaviour",
+    "bprev",
     "bson",
     "cfsubmit",
     "configmap",
@@ -68,6 +70,7 @@
     "trpc",
     "varidic",
     "vite",
+    "vundle",
     "web"
   ]
 }
