@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =9
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/kunal/.dotfiles/alacritty/.config/alacritty'
+let g:netrw_dirhist_1='/home/kunal/.dotfiles/alacritty/.config'
+let g:netrw_dirhist_0='/home/kunal/.dotfiles/alacritty'
 let g:netrw_dirhist_9='/home/kunal/.vim'
 let g:netrw_dirhist_8='/home/kunal'
 let g:netrw_dirhist_7='/mnt/hdard/github/pro/gee/cli'
@@ -7,6 +10,3 @@ let g:netrw_dirhist_6='/mnt/hdard/github/personal/newsletter'
 let g:netrw_dirhist_5='/mnt/hdard/github/personal/newsletter/tests'
 let g:netrw_dirhist_4='/tmp/tokio/src'
 let g:netrw_dirhist_3='/tmp'
-let g:netrw_dirhist_2='/mnt/hdard/github/personal/kiamol/ch05/pi/v1'
-let g:netrw_dirhist_1='/mnt/hdard/github/personal/commit'
-let g:netrw_dirhist_0='/mnt/hdard/github/personal/learning-rust/misc'
