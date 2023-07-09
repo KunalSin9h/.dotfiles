@@ -1,0 +1,56 @@
+*foreground: #f3f3f3
+*background: #121212
+
+*font: xft:JetBrainsMono Nerd Font:size=13:antialias=true:hinting=true
+*boldFont: xft:JetBrainsMono Nerd Font:bold:size=13:antialias=true:hinting=true
+
+*color0: #000000
+*color1: #cc0000
+*color2: #4e9a06
+*color3: #c4a000
+*color4: #3465a4
+*color5: #75507b
+*color6: #06989a
+*color7: #d3d7cf
+*color8: #555753
+*color9: #ef2929
+*color10: #8ae234
+*color11: #fce94f
+*color12: #739fcf
+*color13: #ad7fa8
+*color14: #34e2e2
+*color15: #eeeeec
+
+*scrollBar: false
+URxvt.saveLines: 30000
+scrollWithBuffer: true
+
+urxvt.transparent: 		true 
+urxvt.shading:			20 
+urxvt*depth: 			32 
+urxvt*background: 		rgba:4100/4800/5800/c800 
+
+URxvt*geometry: 		400x400 
+
+!*iconFile: /usr/share/icons/Papirus-Dark/64x64/apps/Terminal.svg
+
+URxvt.pointerBlank: true
+
+!! This disabled a text popup when I would type accents.
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+!! default and selection-to-clipboard are necessary for keyboard-select to work with the clipboard.
+!URxvt.perl-ext-common: default,selection-to-clipboard,font-size,keyboard-select,new-window,vtwheel
+
+!URxvt.keysym.M-v: perl:keyboard-select:activate
+
+!URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+!URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+!URxvt.keysym.C-N: perl:new-window
+
+!URxvt.keysym.C-Up:     font-size:increase
+!URxvt.keysym.C-Down:   font-size:decrease
+!URxvt.keysym.C-equal:  font-size:reset
+!URxvt.keysym.C-slash:  font-size:show

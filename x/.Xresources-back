@@ -1,0 +1,259 @@
+!URxvt------------------------
+URxvt.font: xft:JetBrainsMono Nerd Font:size=14
+urxvt*termName: 		rxvt 
+urxvt*scrollBar: 		false 
+urxvt*matcher.button: 		1 
+urxvt.transparent: 		true 
+urxvt.shading:			20 
+urxvt*depth: 			32 
+urxvt*background: 		rgba:4100/4800/5800/c800 
+urxvt.boldFont:      false 
+Xft*dpi: 			 96 
+Xft*antialias: 			true 
+Xft*hinting: 			true 
+Xft*hintstyle: 			hintfull 
+Xft*rgba: 			rgb 
+URxvt*geometry: 		400x400 
+*internalBorder: 		4
+URxvt*fading: 			0 
+URxvt*tintColor: 		#ffffff 
+URxvt*shading: 			0 
+URxvt*inheritPixmap: 		False 
+URxvt.imLocale: en_US.utf8
+*background:			#2f343f 
+*foreground: 			#d7d7d7 
+*cursorColor: 			#c7c7c7 
+*highlightTextColor: 		#383c4a 
+*highlightColor: 		#c1ddff 
+
+! black */
+*.color0:       		#383c4a
+*.color8:       		#383c4a 
+! red */
+*.color1:       		#e28d9d 
+*.color9:       		#e28d9d 
+! green */
+*.color2:       		#bfd888 
+*.color10:      		#bfd888
+! yellow */
+*.color3:       		#df936c 
+*.color11:      		#df936c 
+! blue */
+*.color4:       		#5294e2 
+*.color12:      		#5294e2
+! magenta */
+*.color5:       		#f74771 
+*.color13:      		#f74771 
+! cyan */
+*.color6:       		#7c818c 
+*.color14:      		#7c818c 
+! white */
+*.color7:       		#d7d7d7 
+*.color15:      		#d7d7d7 
+
+!rofi----------------------------------------------------
+/* rofi.modi:                           drun,window */
+/* rofi.sidebar-mode:                   true */
+/* !rofi.terminal:                       termite */
+/* !rofi.ssh-client:                     ssh */
+/* !rofi.ssh-command:                    {terminal} -e "{ssh-client} {host}" */
+/* rofi.opacity:                        95 */
+/* rofi.width:                          40 */
+/* rofi.lines:                          8 */
+/* rofi.columns:                        1 */
+/* rofi.font:                           Ubuntu 18 */
+/* rofi.location:				        8 */
+/* rofi.xoffset:				          170 */ 
+/* rofi.yoffset:				          70 */ 
+/* rofi.padding:				          30 */
+/* rofi.hide-scrollbar:			     true */
+
+/* rofi.color-enabled: true */
+
+/* !indicator	       bg	    border   separator */
+/* rofi.color-window: #273238, #273238, #1e2529 */
+
+/* !indicator	        bg	    fg 	     altbg    hlbg     hlfg */
+/* rofi.color-normal: #273238, #676E7D, #273238, #273238, #3d9ed5 */
+/* rofi.color-active: #273238, #7cb0ac, #273238, #273238, #3d9ed5 */
+/* rofi.color-urgent: #273238, #ff1844, #273238, #273238, #ff1844 */
+
+! XTerm 
+!-------- Xterm Terminal Settings {{{
+!------------------------------------------------------
+! https://wiki.archlinux.org/index.php/Xterm
+! https://lukas.zapletalovi.com/2013/07/hidden-gems-of-xterm.html
+! http://www.futurile.net/2016/06/14/xterm-setup-and-truetype-font-configuration/
+! http://www.futurile.net/2016/06/15/xterm-256color-themes-molokai-terminal-theme/
+!
+! Remember to run `xrdb < .Xresources` after changing anything.
+!
+/* XTerm*XftFont:  Source Code Pro:size=12:antialias=true:style=Regular */
+XTerm*XftFont:  JetBrainsMono Nerd Font:size=13:style=Regular
+XTerm.termName: xterm-256color
+
+! Color of UI Components
+XTerm*.SimpleMenu.background:   #ffffff
+XTerm*.SimpleMenu.foreground:   #000000
+
+! Tone down the Xaw3D effect.
+XTerm*shapeStyle:               Rectangle
+XTerm*beNiceToColormap:         false
+XTerm*relief:                   None
+XTerm*highlightThickness:       0
+
+! Dont automatically jump to the bottom on output, but do on keypress.
+XTerm*scrollTtyOutput:          false
+XTerm*scrollKey:                true
+XTerm*scrollBar:                false
+XTerm*eightBitInput:            false
+XTerm*cursorBlink:              true
+
+! Dont allow mouse ops - it can be enabled in the view Menu at runtime.
+! The reason is it breaks copy/paste if an application requests mouse events,
+! because the application gets the event instead of XTerm.
+XTerm*allowMouseOps:            false
+
+! Dont change my title by default, this can be re-enabled from the menu.
+XTerm*allowTitleOps:            false
+XTerm*allowFontOps:             false
+
+! Mouse cursor configuration, I prefer to keep it simple.
+XTerm*pointerColor:             white
+XTerm*pointerColorBackground:   black
+XTerm*pointerShape:             left_ptr
+
+! Only select text, not empty space around it.
+XTerm*highlightSelection:       true
+
+! The distance between the edge of the screen and the characters.
+XTerm*vt100.internalBorder:     6
+
+! The border around elements.
+XTerm*.BorderColor:             #ffffff
+XTerm*vt100.BorderColor:        #d0d0d0
+XTerm*BorderWidth:              2
+
+! Menu Names, I dont like the default verbose names.
+XTerm*.mainMenu.label:          File
+XTerm*.vtMenu.label:            Options
+XTerm*.fontMenu.label:          View
+
+! You can rename menu entries, like this, I dont know why the menubar
+! is called a "toolbar", probably historical reasons.
+XTerm*.mainMenu.toolbar.label:  Menubar
+
+! Adjust how the active menu item looks
+XTerm*.SimpleMenu.*.shadowWidth: 3
+XTerm*.SimpleMenu.*.topShadowPixel: SkyBlue
+XTerm*.SimpleMenu.*.bottomShadowPixel: LightSkyBlue
+
+! Try to hide the useless title displayed at the top of menus, I know what
+! menu it is because I just clicked it.
+XTerm*.*.menuLabel.vertSpace:   0
+XTerm*.*.menuLabel.foreground:  #ffffff
+XTerm*.*.menuLabel.XftFont:     Courier:size=0
+
+! Space around menu entries.
+XTerm*.SimpleMenu.*.topMargin:  0
+XTerm*.SimpleMenu.*.bottomMargin: 0
+XTerm*.SimpleMenu.*.leftMargin: 32
+XTerm*.SimpleMenu.*.rightMargin: 64
+! The height of each menu entry, the default calculates it from font size.
+! XTerm*.SimpleMenu.*.rowHeight: 16
+
+! Space around the checkmark in the menus.
+XTerm*.SimpleMenu.*.leftWhitespace: 16
+!XTerm*.SimpleMenu.*.rightWhitespace: 8
+
+! Trim vertical padding around the toolbar, all elements have a form.
+XTerm*Form.menubar.vSpace:      0
+XTerm*Form.menubar.vertDistance: 0
+!XTerm*Form.menubar.foreground: #000000
+!XTerm*Form.menubar.background: #ffffff
+!XTerm*Form.menubar.Thickness:  0
+
+! Fonts
+XTerm*vt100.faceName:           JetBrainsMono Nerd Font:size=13:style=Regular
+XTerm*vt100.boldFont:           JetBrainsMono Nerd Font:size=13:style=Bold
+
+! Size and Title
+XTerm*vt100.geometry:           100x30
+XTerm*title:                    Terminal
+!XTerm*iconHint:                 /home/taviso/.icons/computer_x11.xpm
+
+! Terminal Colors
+XTerm*vt100.background:     #212121
+XTerm*vt100.foreground:     #ffffff
+XTerm*cursorColor:          #00ff00
+
+! I like bold items to be in bright white.
+XTerm*veryBoldColors:       4
+XTerm*colorBDMode:          true
+XTerm*colorBD:              #ffffff
+XTerm*colorRV:              #ffffff
+
+! I can see a small line between box characters, this fixes it.
+XTerm*forceBoxChars:        true
+XTerm*vt100.scaleHeight:    1.04
+
+! This (or similar id) is required for Sixel support.
+XTerm*decTerminalID:        vt382
+
+! Color Scheme
+! 0-7:  Black, Red, Green, Yellow, Blue, Purple, Cyan, White
+! 8-15: Bright Black, Bright Red, ...
+XTerm*color0:               #212121
+XTerm*color8:               #7f7f7f
+XTerm*color1:               #A00000
+XTerm*color9:               #FF0000
+XTerm*color2:               #00A000
+XTerm*color10:              #00FF00
+XTerm*color3:               #A0A000
+XTerm*color11:              #FFFF00
+XTerm*color4:               #0000A0
+XTerm*color12:              #5C5CFF
+XTerm*color5:               #A000A0
+XTerm*color13:              #FF00FF
+XTerm*color6:               #00A0A0
+XTerm*color14:              #00FFFF
+XTerm*color7:               #C0C0C0
+XTerm*color15:              #ffffff
+
+! enable copy/paste hotkey to work (shift+insert = paste ; mouse highlight = copy)
+XTerm*selectToClipboard: true
+! disable fullscreen hotkey alt+enter (hotkey conflicts with weechat, midnight commander ...etc)
+!XTerm*fullscreen: never
+! enable alt key to work
+!XTerm*metaSendsEscape: true
+! Fix the backspace key (for Emacs)
+XTerm.vt100.backarrowKey: false
+XTerm.ttyModes: erase ^?
+
+! double-click to select whole URLs :D
+! https://scarygliders.net/2011/12/01/customize-xterm-the-original-and-best-terminal/
+XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
+! Tips: Left and right selection (text selection using left button for beginning and right button for end)
+! Tips: Triple Click ( 1 click = nothing, 2 click = select word, 3 click = select line )
+!
+! XTerm*on3Clicks: regex [[:alpha:]]+://([[:alnum:]!#+,./=?@_~-]|(%[[:xdigit:]][[:xdigit:]]))+
+XTerm*on3Clicks: regex ([[:alpha:]]+://)?([[:alnum:]!#+,./=?@_~-]|(%[[:xdigit:]][[:xdigit:]]))+
+
+!! Keybinding ========================================================
+! http://blog.rot13.org/2010/03/change-font-size-in-xterm-using-keyboard.html
+! - change fontsize on the fly (ctrl+plus = increase ; ctrl+minus = decrease, ctrl+0 = default)
+! - copy/paste hotkey (ctrl+shift+c = copy ; ctrl+shift+v = paste)
+! - open url (clickable links)
+!   1) double click to highlight the full url
+!   2) Shift + click it to open it
+XTerm.vt100.translations: #override \n\
+  Ctrl <Key> minus: smaller-vt-font() \n\
+  Ctrl <Key> plus: larger-vt-font() \n\
+  Ctrl <Key> 0: set-vt-font(d) \n\
+  Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+  Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
+  Shift <Btn1Up>: exec-formatted("xdg-open '%t'", PRIMARY) \n\
+  <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0) \n\
+  <Btn2Up>: insert-selection(PRIMARY)
+
