@@ -126,7 +126,6 @@ bindsym $mod+o scratchpad show
 
 # window colors
 #                       border              background         text                 indicator
-client.focused          $bg-color           $bg-color          $text-color          #00ff00
 client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color #00ff00
 client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color #00ff00
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
@@ -240,7 +239,7 @@ gaps outer 5
 # smart_borders on
 
 new_window pixel 1
-client.focused #000000 #ffffff #ffffff #ffffff #ffffff
+client.focused #ffffff #2f343f #ffffff #ffffff #ffffff
 
 #Brightness using "brightnessctl"
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl -q set +5%
