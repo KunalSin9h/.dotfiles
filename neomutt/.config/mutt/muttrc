@@ -36,3 +36,8 @@ mailboxes =INBOX =Sent =Trash  =Drafts
 bind index G imap-fetch-mail
 
 set editor = "vim"
+
+# Macro for converting markdown to html
+# Ecs then 5
+macro compose \e5 "F pandoc -s -f markdown -t html \ny^T^Utext/html; charset=utf-8\n"
+set wait_key=no
