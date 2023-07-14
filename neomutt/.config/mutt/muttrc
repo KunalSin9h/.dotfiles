@@ -23,7 +23,7 @@ set  smtp_url = "smtps://kunalsin9h@gmail.com@smtp.gmail.com:465"
 #  smpt => 587
 #  smpts => 465 (Encripted)
 
-set from = "kunalsin9h@gmail.com"
+set from = "kunal@kunalsin9h.com"
 set realname = "Kunal Singh"
 
 set spoolfile = "+INBOX"
