@@ -18,8 +18,7 @@ source "gpg -d ~/.mutt/passwords.gpg |"
 source colors.muttrc
 
 set folder = "imaps://kunalsin9h@gmail.com@imap.gmail.com:993"
-
-set  smtp_url = "smtp://f72cd095-38fe-4721-a795-8713737a3300@smtp.postmarkapp.com:587"
+# set smtp_url = "smpt://username@server:587"
 #  smpt => 587
 #  smpts => 465 (Encripted)
 
