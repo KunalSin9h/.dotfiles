@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/mnt/hdard/github/personal/livejq/.github/workflows'
 let g:netrw_dirhist_2='/mnt/hdard/github/personal/newsletter/src/routes'
 let g:netrw_dirhist_1='/mnt/hdard/github/personal/newsletter/src'
 let g:netrw_dirhist_0='/mnt/hdard/github/personal/newsletter'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_7='/home/kunal/.dotfiles/i3/.config/i3'
 let g:netrw_dirhist_6='/home/kunal/.dotfiles/neomutt/.config/mutt'
 let g:netrw_dirhist_5='/home/kunal/.tmux'
 let g:netrw_dirhist_4='/mnt/hdard/github/personal/website-v4/src/app'
-let g:netrw_dirhist_3='/mnt/hdard/github/personal/website-v4/src'
