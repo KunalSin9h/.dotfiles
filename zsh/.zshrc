@@ -147,6 +147,9 @@ export PATH="$COMMIT_INSTALL/bin:$PATH"
 export COMMIT_INSTALL="$HOME/.commit"
 export PATH="$COMMIT_INSTALL/bin:$PATH"
 
+# golangci-lint
+export PATH="/home/kunal/go/bin:$PATH"
+
 # pnpm
 export PNPM_HOME="/home/kunal/.local/share/pnpm"
 case ":$PATH:" in
@@ -154,5 +157,3 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-
-ponysay -o 

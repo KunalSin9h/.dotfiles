@@ -228,6 +228,8 @@ bindsym $mod+Escape exec --no-startup-id i3lock -c 000000 && xset dpms force off
 #xflux for night light
 exec_always xflux -l -75.9527 -g 166.4895 -k 3500
 
+exec_always /usr/bin/lxqt-policykit-agent
+
 # background image
 exec_always feh --bg-scale /home/kunal/Downloads/wallpapers/sceme.jpg
 
@@ -244,4 +246,3 @@ client.focused #ffffff #2f343f #ffffff #ffffff #ffffff
 #Brightness using "brightnessctl"
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl -q set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl --min-val=2 -q set 5%-
-
