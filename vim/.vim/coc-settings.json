@@ -1,6 +1,6 @@
 {
   "clangd.path": "/usr/bin/clangd",
-  "inlayHint.enable": false,
+  "inlayHint.enable": true,
   "elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh",
   "clangd.fallbackFlags": [ 
       "-std=c++20",
