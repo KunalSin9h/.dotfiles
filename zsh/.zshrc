@@ -30,7 +30,7 @@ SAVEHIST=10000
 HISTFILE=~/.cache/zsh/history
 
 # Alias
-alias ls='exa'
+alias ls='ls'
 alias ll='ls -alF'
 alias la='ls -a'
 alias tr='ls -T'
