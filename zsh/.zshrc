@@ -30,7 +30,7 @@ SAVEHIST=10000
 HISTFILE=~/.cache/zsh/history
 
 # Alias
-alias ls='ls'
+alias ls='eza'
 alias ll='ls -alF'
 alias la='ls -a'
 alias tr='ls -T'
@@ -157,3 +157,9 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+# bun completions
+[ -s "/home/kunal/.bun/_bun" ] && source "/home/kunal/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
