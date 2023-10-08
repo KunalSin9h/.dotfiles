@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/kunal/.vim/templates'
+let g:netrw_dirhist_2='/home/kunal/.vim'
 let g:netrw_dirhist_1='/home/kunal/.dotfiles/neomutt/.config/mutt'
 let g:netrw_dirhist_0='/home/kunal/.dotfiles/neomutt/.config'
 let g:netrw_dirhist_9='/tmp/x.sh'
@@ -8,5 +10,3 @@ let g:netrw_dirhist_7='/mnt/hdard/github/personal/secops/src'
 let g:netrw_dirhist_6='/mnt/hdard/github/personal/secops'
 let g:netrw_dirhist_5='/mnt/hdard/github/personal/secops/src'
 let g:netrw_dirhist_4='/mnt/hdard/github/personal/secops/src/lib'
-let g:netrw_dirhist_3='/mnt/hdard/github/personal/graphql/api/src'
-let g:netrw_dirhist_2='/mnt/hdard/github/personal/graphql/api'

@@ -1,6 +1,3 @@
-/*
- * $%U%$, $%D%$ $%M%$ $%Y%$    $%h%$:$%m%$
- */
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -35,6 +35,7 @@
     "bhaskar",
     "bprev",
     "bson",
+    "buf",
     "cfsubmit",
     "chrono",
     "close",
@@ -98,6 +99,7 @@
     "reqwest",
     "rotr",
     "rspc",
+    "rtcp",
     "runtimes",
     "russh",
     "secops",
@@ -119,6 +121,7 @@
     "vite",
     "vitejs",
     "vundle",
-    "web"
+    "web",
+    "webrtc"
   ]
 }
