@@ -83,6 +83,7 @@
     "moneymap",
     "ndims",
     "newvec",
+    "nhooyr",
     "nums",
     "one",
     "pacman",
@@ -102,6 +103,7 @@
     "rtcp",
     "runtimes",
     "russh",
+    "sapnendra",
     "secops",
     "singh",
     "some",
@@ -122,6 +124,7 @@
     "vitejs",
     "vundle",
     "web",
-    "webrtc"
+    "webrtc",
+    "wsjson"
   ]
 }
