@@ -1,4 +1,4 @@
-use std::io::{BufRead, self, prelude::*};
+use std::io::{self, BufRead, Write, BufWriter};
 use std::str;
 
 struct Scanner<R> {
@@ -15,7 +15,7 @@ impl<R: BufRead> Scanner<R> {
     fn token<T: str::FromStr>(&mut self) -> T {
         loop {
             if let Some(token) = self.buf_iter.next() {
-                return token.parse().ok().expect("Failed parse");
+                return token.parse().ok().expect("Failed to parse token");
             }
             self.buf_str.clear();
             self.reader.read_until(b'\n', &mut self.buf_str).expect("Failed read");
@@ -34,6 +34,6 @@ fn solve<R: BufRead, W: Write>(scan: &mut Scanner<R>, out: &mut W) {
 fn main(){
     let (stdin, stdout) = (io::stdin(), io::stdout());
     let mut scan = Scanner::new(stdin.lock());
-    let mut out = io::BufWriter::new(stdout.lock());
+    let mut out = BufWriter::new(stdout.lock());
     solve(&mut scan, &mut out);
 }
