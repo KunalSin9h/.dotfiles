@@ -1,12 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =0
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/mnt/hdard/cp/contest/1881/b'
+let g:netrw_dirhist_3='/mnt/hdard/github/personal/newsletter/.github/workflows'
+let g:netrw_dirhist_2='/mnt/hdard/github/personal/newsletter/.github'
+let g:netrw_dirhist_1='/mnt/hdard/github/personal/newsletter/configuration'
 let g:netrw_dirhist_0='/home/kunal/.dotfiles/vim/.vim/templates'
 let g:netrw_dirhist_9='/mnt/hdard/github/personal/websockets-examples/.vim'
 let g:netrw_dirhist_8='/'
 let g:netrw_dirhist_7='/home'
 let g:netrw_dirhist_6='/home/kunal'
 let g:netrw_dirhist_5='/home/kunal/.cf'
-let g:netrw_dirhist_4='/mnt/hdard/cp/contest/1877/d'
-let g:netrw_dirhist_3='/home/kunal/.vim/templates'
-let g:netrw_dirhist_2='/home/kunal/.vim'
-let g:netrw_dirhist_1='/home/kunal/.dotfiles/neomutt/.config/mutt'

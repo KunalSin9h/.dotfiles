@@ -164,3 +164,7 @@ esac
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# vedic
+export VEDIC_INSTALL="$HOME/.vedic"
+export PATH="$VEDIC_INSTALL/bin:$PATH"
