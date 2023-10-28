@@ -12,6 +12,9 @@
 *font: xft:JetBrainsMono Nerd Font:size=14:antialias=true:hinting=true
 *boldFont: xft:JetBrainsMono Nerd Font:bold:size=14:antialias=true:hinting=true
 
+!*font: xft:Geist Mono:size=14:antialias=true:hinting=true
+!*boldFont: xft:Geist Mono:bold:size=14:antialias=true:hinting=true
+
 *color0: #000000
 *color1: #cc0000
 *color2: #4e9a06
@@ -143,6 +146,9 @@ XTerm*Form.menubar.vertDistance: 0
 ! Fonts
 XTerm*vt100.faceName:           JetBrainsMono Nerd Font:size=14:style=Regular
 XTerm*vt100.boldFont:           JetBrainsMono Nerd Font:size=14:style=Bold
+!
+!XTerm*vt100.faceName:           Geist Mono:size=14:style=Regular
+!XTerm*vt100.boldFont:           Geist Mono Bold:size=14:style=Bold
 
 ! Size and Title
 XTerm*vt100.geometry:           100x30

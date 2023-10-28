@@ -55,7 +55,8 @@ set splitbelow splitright
 "colorscheme solarized
 
 set background=dark
-colorscheme aylin
+syntax enable
+colorscheme monokai
 
 set spelllang=en_gb
 set spellfile=~/.vim/spell.en.utf-8.add
@@ -87,7 +88,9 @@ augroup END
 
 " Append template to new C++ files
 autocmd BufNewFile *.cpp 0r ~/.vim/templates/skeleton.cpp
-" autocmd BufNewFile *.c 0r ~/.vim/templates/skeleton.c
+autocmd BufNewFile *.go 0r ~/.vim/templates/init.go
+autocmd BufNewFile *.rs 0r ~/.vim/templates/init.rs
+autocmd BufNewFile *.c 0r ~/.vim/templates/init.c
 
 set nocompatible              " be iMproved, required
 filetype off                  " required

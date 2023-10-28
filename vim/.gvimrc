@@ -10,5 +10,5 @@
 set guifont=JetBrainsMono\ Nerd\ Font\ 14
 set background=dark
 colorscheme  aylin
-set guioptions -=m
-set guioptions -=T
+" set guioptions -=m
+" set guioptions -=T
