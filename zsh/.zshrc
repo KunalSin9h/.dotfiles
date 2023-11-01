@@ -168,3 +168,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # vedic
 export VEDIC_INSTALL="$HOME/.vedic"
 export PATH="$VEDIC_INSTALL/bin:$PATH"
+
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi

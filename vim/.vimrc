@@ -56,7 +56,7 @@ set splitbelow splitright
 
 set background=dark
 syntax enable
-colorscheme monokai
+colorscheme aylin
 
 set spelllang=en_gb
 set spellfile=~/.vim/spell.en.utf-8.add

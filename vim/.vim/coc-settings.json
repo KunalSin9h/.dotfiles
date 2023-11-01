@@ -24,6 +24,7 @@
       "-D_FORTIFY_SOURCE=2"
   ],
   "cSpell.userWords": [
+    "",
     "actix",
     "agrocd",
     "amqp",
