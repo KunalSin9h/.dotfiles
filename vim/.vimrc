@@ -50,12 +50,12 @@ set ttimeoutlen=0       "time to run command
 set wildmenu            "adv. menu for auto-comp.
 set splitbelow splitright
 
-"set background=light
-"let g:solarized_termcolors=256
-"colorscheme solarized
+syntax enable
+" set background=light
+" let g:solarized_termcolors=256
+" colorscheme solarized
 
 set background=dark
-syntax enable
 colorscheme aylin
 
 set spelllang=en_gb

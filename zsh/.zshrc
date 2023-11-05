@@ -42,6 +42,10 @@ alias cls='clear'
 alias hx='helix'
 alias cont='cd /mnt/hdard/cp/contest'
 
+alias cd2="cd ../../"
+alias cd3="cd ../../../"
+alias cd4="cd ../../../../"
+
 # The 2>/dev/null at the end of the find command tells your shell to redirect the error messages (FD #2) to /dev/null, so you don’t have to see them on screen.
 alias sd="cd / && cd \$(find * -type d -print 2>/dev/null | fzf)"
 alias sf="cd / && vim \$(find . -type f -print 2>/dev/null | fzf)"
@@ -169,8 +173,11 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export VEDIC_INSTALL="$HOME/.vedic"
 export PATH="$VEDIC_INSTALL/bin:$PATH"
 
+# nim
+export PATH=/home/kunal/.nimble/bin:$PATH
 
 # https://unix.stackexchange.com/questions/43601/how-can-i-set-my-default-shell-to-start-up-tmux
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
 fi
+
