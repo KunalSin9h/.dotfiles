@@ -1,12 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =7
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/mnt/hdard/meltred/meltcd/server'
+let g:netrw_dirhist_0='/mnt/hdard/meltred/meltcd'
+let g:netrw_dirhist_9='/mnt/hdard/meltred/meltcd/server'
+let g:netrw_dirhist_8='/mnt/hdard/github/personal/keyid/keyid'
 let g:netrw_dirhist_7='/mnt/hdard/personal/aoc/2023/day_2'
 let g:netrw_dirhist_6='/'
 let g:netrw_dirhist_5='/tmp'
 let g:netrw_dirhist_4='/mnt/hdard/meltred/meltcd/ui'
 let g:netrw_dirhist_3='/mnt/hdard/meltred/meltcd/ui/public'
 let g:netrw_dirhist_2='/mnt/hdard/meltred/meltcd/test'
-let g:netrw_dirhist_1='/mnt/hdard/meltred/desktop'
-let g:netrw_dirhist_0='/mnt/hdard/meltred/infra/base'
-let g:netrw_dirhist_9='/mnt/hdard/meltred/infra/release-server'
-let g:netrw_dirhist_8='/mnt/hdard/meltred/infra/base'
