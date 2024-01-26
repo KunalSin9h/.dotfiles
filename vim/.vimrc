@@ -56,7 +56,7 @@ syntax enable
 " colorscheme solarized
 
 set background=dark
-colorscheme aylin
+colorscheme gruvbox
 
 set spelllang=en_gb
 set spellfile=~/.vim/spell.en.utf-8.add

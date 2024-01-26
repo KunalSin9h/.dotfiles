@@ -1,5 +1,3 @@
-
-
 " ░░░░██████╗░██╗░░░██╗██╗███╗░░░███╗██████╗░░█████╗░
 " ░░░██╔════╝░██║░░░██║██║████╗░████║██╔══██╗██╔══██╗
 " ░░░██║░░██╗░╚██╗░██╔╝██║██╔████╔██║██████╔╝██║░░╚═╝
@@ -9,6 +7,6 @@
 
 set guifont=JetBrainsMono\ Nerd\ Font\ 14
 set background=dark
-colorscheme  aylin
-" set guioptions -=m
-" set guioptions -=T
+colorscheme  gruvbox
+set guioptions -=m
+set guioptions -=T

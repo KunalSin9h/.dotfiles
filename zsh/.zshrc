@@ -41,6 +41,7 @@ alias grep='grep --color=auto'
 alias cls='clear'
 alias hx='helix'
 alias cont='cd /mnt/hdard/cp/contest'
+alias go='go1.21.5'
 
 alias cd2="cd ../../"
 alias cd3="cd ../../../"
