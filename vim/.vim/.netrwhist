@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/kunal/.ssh'
 let g:netrw_dirhist_2='/mnt/hdard/github/zinc/zinc/cmd/zinc'
 let g:netrw_dirhist_1='/mnt/hdard/github/zinc/zinc/cmd'
 let g:netrw_dirhist_0='/mnt/hdard/github/zinc/zinc/internal/cli'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_7='/mnt/hdard/personal/fullstackgo/static/css'
 let g:netrw_dirhist_6='/mnt/hdard/personal/fullstackgo/static'
 let g:netrw_dirhist_5='/mnt/hdard/github/personal/tauri-app-template/scripts/cmd/version'
 let g:netrw_dirhist_4='/mnt/hdard/github/personal/tauri-app-template/scripts/cmd'
-let g:netrw_dirhist_3='/mnt/hdard/github/personal/tauri-app-template/scripts/cmd/version'
