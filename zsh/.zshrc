@@ -41,7 +41,7 @@ alias grep='grep --color=auto'
 alias cls='clear'
 alias hx='helix'
 alias cont='cd /mnt/hdard/cp/contest'
-alias go='go1.21.5'
+# alias go='go1.22.0'
 
 alias cd2="cd ../../"
 alias cd3="cd ../../../"
@@ -185,3 +185,7 @@ fi
 
 # Turso
 export PATH="/home/kunal/.turso:$PATH"
+
+# tabtab source for electron-forge package
+# uninstall by removing these lines or running `tabtab uninstall electron-forge`
+[[ -f /mnt/hdard/.pnpm-store/v3/tmp/dlx-14662/node_modules/.pnpm/tabtab@2.2.2/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /mnt/hdard/.pnpm-store/v3/tmp/dlx-14662/node_modules/.pnpm/tabtab@2.2.2/node_modules/tabtab/.completions/electron-forge.zsh

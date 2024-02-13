@@ -45,7 +45,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xterm
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -231,7 +231,7 @@ exec_always xflux -l -75.9527 -g 166.4895 -k 3500
 exec_always /usr/bin/lxqt-policykit-agent
 
 # background image
-exec_always feh --bg-scale /home/kunal/Downloads/wallpapers/chill.jpg
+exec_always feh --bg-scale /home/kunal/Downloads/wallpapers/l1.jpg
 
 # Gaps
 for_window [class="^.*"] border pixel 2
