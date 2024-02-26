@@ -31,6 +31,7 @@ HISTFILE=~/.cache/zsh/history
 
 # Alias
 alias cat='bat'
+alias cd='z'
 alias ls='eza'
 alias ll='ls -alF'
 alias la='ls -a'
@@ -177,10 +178,10 @@ export PATH="$VEDIC_INSTALL/bin:$PATH"
 # nim
 export PATH=/home/kunal/.nimble/bin:$PATH
 
-# https://unix.stackexchange.com/questions/43601/how-can-i-set-my-default-shell-to-start-up-tmux
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux
-fi
+# # https://unix.stackexchange.com/questions/43601/how-can-i-set-my-default-shell-to-start-up-tmux
+# if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+#   exec tmux
+# fi
 
 
 # Turso
@@ -189,3 +190,5 @@ export PATH="/home/kunal/.turso:$PATH"
 # tabtab source for electron-forge package
 # uninstall by removing these lines or running `tabtab uninstall electron-forge`
 [[ -f /mnt/hdard/.pnpm-store/v3/tmp/dlx-14662/node_modules/.pnpm/tabtab@2.2.2/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /mnt/hdard/.pnpm-store/v3/tmp/dlx-14662/node_modules/.pnpm/tabtab@2.2.2/node_modules/tabtab/.completions/electron-forge.zsh
+
+eval "$(zoxide init zsh)"
