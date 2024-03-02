@@ -231,7 +231,7 @@ exec_always xflux -l -75.9527 -g 166.4895 -k 3500
 exec_always /usr/bin/lxqt-policykit-agent
 
 # background image
-exec_always feh --bg-scale /home/kunal/Downloads/wallpapers/l1.jpg
+exec_always feh --bg-scale /home/kunal/Downloads/wallpapers/wakk.png
 
 # Gaps
 for_window [class="^.*"] border pixel 2

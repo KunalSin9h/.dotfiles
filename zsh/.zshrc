@@ -175,6 +175,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export VEDIC_INSTALL="$HOME/.vedic"
 export PATH="$VEDIC_INSTALL/bin:$PATH"
 
+export JAVA_HOME=/usr/lib/jvm/default
+
 # nim
 export PATH=/home/kunal/.nimble/bin:$PATH
 
