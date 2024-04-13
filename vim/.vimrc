@@ -140,6 +140,9 @@ autocmd filetype cpp nnoremap <F8> :!./%:r.out<CR>
 nnoremap <F9> :vertical terminal ++shell ++cols=40 cf test<CR>
 nnoremap <F12> :vertical terminal ++shell ++cols=40 cfsubmit.sh<CR>
 
+"Competatie Companion
+nnoremap <F10> :terminal ++shell ++rows=12 egor test<CR>
+
 "vim utility
 nnoremap <F2> :q <CR>
 "ctrl + t -> terminal
