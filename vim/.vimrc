@@ -142,6 +142,7 @@ nnoremap <F12> :vertical terminal ++shell ++cols=40 cfsubmit.sh<CR>
 
 "Competatie Companion
 nnoremap <F10> :terminal ++shell ++rows=12 egor test<CR>
+nnoremap <F11> :terminal ++shell ++rows=2 egor copy<CR>
 
 "vim utility
 nnoremap <F2> :q <CR>
