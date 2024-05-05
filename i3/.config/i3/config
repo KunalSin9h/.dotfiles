@@ -17,7 +17,7 @@ set $urgent-bg-color     #E53935
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Ubuntu Regular 8
+#font pango:Ubuntu Regular 8
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
@@ -45,7 +45,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -111,7 +111,7 @@ bindsym $mod+space focus mode_toggle
 
 # screenshot
 bindsym Print exec flameshot gui
-bindsym $mod+p exec flameshot gui
+#bindsym $mod+p exec flameshot gui
 
 # Switch workspaces
 bindsym $mod+Tab focus right
@@ -223,25 +223,26 @@ bindsym $mod+r mode "resize"
 
 #lock screen
 bindsym $mod+Escape exec --no-startup-id i3lock -c 000000 && xset dpms force off
+
 #bindsym $mod+Escape exec --no-startup-id xset dpms force off
 
 #xflux for night light
-exec_always xflux -l -75.9527 -g 166.4895 -k 3500
+#exec_always xflux -l -75.9527 -g 166.4895 -k 3500
 
-exec_always /usr/bin/lxqt-policykit-agent
+#exec_always /usr/bin/lxqt-policykit-agent
 
 # background image
-exec_always feh --bg-scale /home/kunal/Downloads/wallpapers/wakk.png
+exec_always feh --bg-scale /home/kunal/Pictures/wallpaper/mount.jpg
 
 # Gaps
-for_window [class="^.*"] border pixel 2
-gaps inner 5
-gaps outer 5
-# smart_gaps on
-# smart_borders on
+#for_window [class="^.*"] border pixel 2
+#gaps inner 2
+#gaps outer 2
+#smart_gaps on
+#smart_borders on
 
 new_window pixel 1
-client.focused #ffffff #2f343f #ffffff #ffffff #ffffff
+client.focused #8c8c8c #2f343f #8c8c8c #8c8c8c #8c8c8c
 
 #Brightness using "brightnessctl"
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl -q set +5%
