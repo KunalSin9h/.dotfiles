@@ -19,11 +19,6 @@ export FZF_DEFAULT_COMMAND="rg --files --hidden -g'!.git' -g'!.cache' -g'!go' -g
 export PATH=$PATH:/home/kunal/scripts
 export PATH=$PATH:/home/kunal/.config/coc/extensions/coc-clangd-data/install/15.0.6/clangd_15.0.6/bin/clangd
 
-# Using SCCACHE for caching rust builds
-export RUSTC_WRAPPER=/home/kunal/.cargo/bin/sccache
-
-# Source
-
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
@@ -31,7 +26,6 @@ HISTFILE=~/.cache/zsh/history
 
 # Alias
 alias cat='bat'
-alias cd='z'
 alias ls='eza'
 alias ll='ls -alF'
 alias la='ls -a'
@@ -40,9 +34,7 @@ alias vi='vim'
 alias mutt="neomutt"
 alias grep='grep --color=auto'
 alias cls='clear'
-alias hx='helix'
 alias cont='cd /mnt/hdard/cp/contest'
-# alias go='go1.22.0'
 
 alias cd2="cd ../../"
 alias cd3="cd ../../../"
@@ -126,34 +118,6 @@ zstyle :compinstall filename '/home/kunal/.zshrc'
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 
-# commit
-export COMMIT_INSTALL="$HOME/.commit"
-export PATH="$COMMIT_INSTALL/bin:$PATH"
-
-# commit
-export COMMIT_INSTALL="$HOME/.commit"
-export PATH="$COMMIT_INSTALL/bin:$PATH"
-
-# commit
-export COMMIT_INSTALL="$HOME/.commit"
-export PATH="$COMMIT_INSTALL/bin:$PATH"
-
-# commit
-export COMMIT_INSTALL="$HOME/.commit"
-export PATH="$COMMIT_INSTALL/bin:$PATH"
-
-# commit
-export COMMIT_INSTALL="$HOME/.commit"
-export PATH="$COMMIT_INSTALL/bin:$PATH"
-
-# commit
-export COMMIT_INSTALL="$HOME/.commit"
-export PATH="$COMMIT_INSTALL/bin:$PATH"
-
-# commit
-export COMMIT_INSTALL="$HOME/.commit"
-export PATH="$COMMIT_INSTALL/bin:$PATH"
-
 # golangci-lint
 export PATH="/home/kunal/go/bin:$PATH"
 
@@ -192,5 +156,3 @@ export PATH="/home/kunal/.turso:$PATH"
 # tabtab source for electron-forge package
 # uninstall by removing these lines or running `tabtab uninstall electron-forge`
 [[ -f /mnt/hdard/.pnpm-store/v3/tmp/dlx-14662/node_modules/.pnpm/tabtab@2.2.2/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /mnt/hdard/.pnpm-store/v3/tmp/dlx-14662/node_modules/.pnpm/tabtab@2.2.2/node_modules/tabtab/.completions/electron-forge.zsh
-
-eval "$(zoxide init zsh)"
