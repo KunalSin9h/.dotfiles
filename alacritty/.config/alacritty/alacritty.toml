@@ -2,7 +2,7 @@
 draw_bold_text_with_bright_colors = true
 
 [font]
-size = 14
+size = 12
 
 [[keyboard.bindings]]
 action = "Paste"
@@ -74,5 +74,5 @@ key = "T"
 mods = "Control|Shift"
 
 [window.padding]
-x = 2
-y = 8
+x = 8
+y = 0

@@ -116,43 +116,18 @@ zstyle :compinstall filename '/home/kunal/.zshrc'
 # -> sudo pacman -S zsh-syntax-highlighting
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
-
-# golangci-lint
-export PATH="/home/kunal/go/bin:$PATH"
-
-# pnpm
-export PNPM_HOME="/home/kunal/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
-# bun completions
-[ -s "/home/kunal/.bun/_bun" ] && source "/home/kunal/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# vedic
-export VEDIC_INSTALL="$HOME/.vedic"
-export PATH="$VEDIC_INSTALL/bin:$PATH"
-
-export JAVA_HOME=/usr/lib/jvm/default
-
-# nim
-export PATH=/home/kunal/.nimble/bin:$PATH
 
 # # https://unix.stackexchange.com/questions/43601/how-can-i-set-my-default-shell-to-start-up-tmux
 # if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
 #   exec tmux
 # fi
 
+autoload -Uz vcs_info
+precmd() { vcs_info }
 
-# Turso
-export PATH="/home/kunal/.turso:$PATH"
+zstyle ':vcs_info:git:*' formats '%b '
 
-# tabtab source for electron-forge package
-# uninstall by removing these lines or running `tabtab uninstall electron-forge`
-[[ -f /mnt/hdard/.pnpm-store/v3/tmp/dlx-14662/node_modules/.pnpm/tabtab@2.2.2/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /mnt/hdard/.pnpm-store/v3/tmp/dlx-14662/node_modules/.pnpm/tabtab@2.2.2/node_modules/tabtab/.completions/electron-forge.zsh
+setopt PROMPT_SUBST
+PROMPT='%F{green}%*%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
