@@ -61,8 +61,8 @@ colorscheme gruvbox
 set spelllang=en_gb
 set spellfile=~/.vim/spell.en.utf-8.add
 
-au BufNewFile,BufRead /tmp/neomutt*  setf mail
-au BufNewFile,BufRead /tmp/neomutt*  set ai et tw=68 spell
+"au BufNewFile,BufRead /tmp/neomutt*  setf mail
+"au BufNewFile,BufRead /tmp/neomutt*  set ai et tw=68 spell
 
 "Cursor Style on diff mode(Insert & Normal)
 let &t_SI = "\e[6 q"
@@ -87,11 +87,11 @@ augroup remember_folds
 augroup END
 
 " Append template to new C++ files
-autocmd BufNewFile *.cpp 0r ~/.vim/templates/skeleton.cpp
-autocmd BufNewFile *.go 0r ~/.vim/templates/init.go
-autocmd BufNewFile *.rs 0r ~/.vim/templates/init.rs
-autocmd BufNewFile *.c 0r ~/.vim/templates/init.c
-
+"autocmd BufNewFile *.cpp 0r ~/.vim/templates/skeleton.cpp
+"autocmd BufNewFile *.go 0r ~/.vim/templates/init.go
+"autocmd BufNewFile *.rs 0r ~/.vim/templates/init.rs
+"autocmd BufNewFile *.c 0r ~/.vim/templates/init.c
+"
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -100,7 +100,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
 " Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
@@ -131,18 +130,18 @@ filetype plugin indent on    " required
 
 "General shotcut for compiling and running
 " you need make.sh in computer to work 
-set makeprg=make.sh\ %:r
-autocmd filetype cpp nnoremap <F5> :w <bar> Make <CR> 
-autocmd filetype cpp nnoremap <F6> :vertical terminal ++shell ++cols=40 ./%:r.out<CR>
-autocmd filetype cpp nnoremap <F8> :!./%:r.out<CR>
+"set makeprg=make.sh\ %:r
+"autocmd filetype cpp nnoremap <F5> :w <bar> Make <CR> 
+"autocmd filetype cpp nnoremap <F6> :vertical terminal ++shell ++cols=40 ./%:r.out<CR>
+"autocmd filetype cpp nnoremap <F8> :!./%:r.out<CR>
 
 "CodeForces specific
-nnoremap <F9> :vertical terminal ++shell ++cols=40 cf test<CR>
-nnoremap <F12> :vertical terminal ++shell ++cols=40 cfsubmit.sh<CR>
+"nnoremap <F9> :vertical terminal ++shell ++cols=40 cf test<CR>
+"nnoremap <F12> :vertical terminal ++shell ++cols=40 cfsubmit.sh<CR>
 
 "Competatie Companion
-nnoremap <F10> :terminal ++shell ++rows=12 egor test<CR>
-nnoremap <F11> :terminal ++shell ++rows=2 egor copy<CR>
+"nnoremap <F10> :terminal ++shell ++rows=12 egor test<CR>
+"nnoremap <F11> :terminal ++shell ++rows=2 egor copy<CR>
 
 "vim utility
 nnoremap <F2> :q <CR>
@@ -179,26 +178,15 @@ highlight GitGutterChange guifg=#bbbb00 ctermfg=3 guibg=NONE
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1 guibg=NONE
 
 hi Normal guibg=NONE ctermbg=NONE
-highlight clear LineNr
-" set cursorline
-" highlight CursorLine term=bold cterm=NONE ctermbg=none  ctermfg=red gui=bold
-" highlight CursorLineNr term=bold cterm=none ctermbg=none ctermfg=white  gui=none 
+"set cursorline
+"highlight CursorLine term=bold cterm=NONE ctermbg=none  ctermfg=red gui=bold
+"highlight CursorLineNr term=bold cterm=none ctermbg=none ctermfg=white  gui=none 
 
 " Map J and K keys to move selected block up and down
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
-if (has("nvim"))
-  "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
-  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-endif
-
-"For Neovim > 0.1.5 and Vim > patch 7.4.1799 < https://github.com/vim/vim/commit/61be73bb0f965a895bfb064ea3e55476ac175162 >
-"Based on Vim patch 7.4.1770 (`guicolors` option) < https://github.com/vim/vim/commit/8a633e3427b47286869aa4b96f2bfc1fe65b25cd >
-" < https://github.com/neovim/neovim/wiki/Following-HEAD#20160511 >
-if (has("termguicolors"))
-  set termguicolors
-endif
+set termguicolors
 
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 

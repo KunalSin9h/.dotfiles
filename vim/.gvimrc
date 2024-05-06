@@ -5,7 +5,7 @@
 " ██╗╚██████╔╝░░╚██╔╝░░██║██║░╚═╝░██║██║░░██║╚█████╔╝
 " ╚═╝░╚═════╝░░░░╚═╝░░░╚═╝╚═╝░░░░░╚═╝╚═╝░░╚═╝░╚════╝░
 
-set guifont=JetBrainsMono\ Nerd\ Font\ 14
+set guifont=NotoSansMono\ 16
 set background=dark
 colorscheme  gruvbox
 set guioptions -=m
