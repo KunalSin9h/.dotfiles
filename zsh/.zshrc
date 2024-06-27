@@ -9,15 +9,18 @@
 
 autoload -U colors && colors
 
-PS1="
-%B%{$fg[red]%}[%{$fg[white]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[gray]%}%~%{$fg[red]%}]%{$reset_color%}
-$%b "
+#PS1="
+#%B%{$fg[red]%}[%{$fg[white]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[gray]%}%~%{$fg[red]%}]%{$reset_color%}
+#$%b "
 
 # Exports
 export EXA_COLORS="da=1;34"
 export FZF_DEFAULT_COMMAND="rg --files --hidden -g'!.git' -g'!.cache' -g'!go' -g'!.vscode' -g'!view'"
 export PATH=$PATH:/home/kunal/scripts
 export PATH=$PATH:/home/kunal/.config/coc/extensions/coc-clangd-data/install/15.0.6/clangd_15.0.6/bin/clangd
+
+export PATH=$PATH:/home/kunal/go/bin
+export PATH=$PATH:/home/kunal/scripts
 
 # History in cache directory:
 HISTSIZE=10000
@@ -131,10 +134,86 @@ precmd() { vcs_info }
 zstyle ':vcs_info:git:*' formats '%b '
 
 setopt PROMPT_SUBST
-PROMPT='%F{green}%*%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
+PROMPT='
+%F{green}%*%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f
+$ '
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 eval "$(zoxide init zsh)"
+
+# Use a special colour for Nix shells.
+#prompt_color() {
+#    if [ -n "$IN_NIX_SHELL" ]; then
+#        echo "$fg_bold[blue]"
+#    else
+#        echo "$fg_bold[green]"
+#    fi
+#}
+
+
+# Use a different prompt for root and non-root users.
+#if [ "`id -u`" -eq 0 ]; then
+#    PROMPT='%{$fg_bold[red]%}[%n@%M]:%{$reset_color%}%d %# '
+#else
+#    PROMPT='%{$(prompt_color)%}[%n@%M]:%{$reset_color%}%~ %# '
+#fi
+
+###################
+# Bazik ZSH theme #
+###################
+
+##
+## Coloured ls
+##
+
+# a     black
+# b     red
+# c     green
+# d     brown
+# e     blue
+# f     magenta
+# g     cyan
+# h     light grey
+#
+# 1.    directory               -               blue/none       ex
+# 2.    symbolic link           -               magenta/none    fx
+# 3.    socket                  -               green/none      cx
+# 4.    pipe                    -               brow/none       dx
+# 5.    executable              -               red/none        bx
+# 6.    block special           -               black/red       ab
+# 7.    character special                       black/brown     ad
+# 8.    executable with setuid bit              RED/grey        Bh
+# 9.    executable with setgid bit              MAGENTA/grey    Fh
+# 10.   directory o+w, with sticky bit          blue/grey       eh
+# 11.   directory o+w, without sticky bit       cyan/grey       gh
+export LSCOLORS="exfxcxdxbxabadBhFhehgh"
+export LS_COLORS="di=34:ln=35:so=32:pi=33:ex=31:bd=30;41:cd=30;43:su=1;31;47:sg=1;35;47:tw=34;47:ow=36;47"
+
+##
+## Left prompt with contextual colours
+##
+
+setopt prompt_subst
+autoload -U colors && colors
+
+# Use a special colour for Nix shells.
+prompt_color() {
+    if [ -n "$IN_NIX_SHELL" ]; then
+        echo "$fg_bold[blue]"
+    else
+        echo "$fg_bold[green]"
+    fi
+}
+
+eval "$(direnv hook zsh)"
+
+# add Pulumi to the PATH
+export PATH=$PATH:/home/kunal/.pulumi/bin
+
+terraform -install-autocomplete
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform

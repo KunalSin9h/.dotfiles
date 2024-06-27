@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/mnt/hdard/herbalclub/user-service-v2/migrations'
 let g:netrw_dirhist_4='/home/kunal/.dotfiles/i3/.config/i3'
 let g:netrw_dirhist_3='/home/kunal'
 let g:netrw_dirhist_2='/home/kunal/.dotfiles'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_9='/mnt/hdard/herbalclub/app-tauri-v1/.github/workflows'
 let g:netrw_dirhist_8='/mnt/hdard/herbalclub/auth-consent-v1/src'
 let g:netrw_dirhist_7='/mnt/hdard/herbalclub/desktop-electron-v1/.github/workflows'
 let g:netrw_dirhist_6='/mnt/hdard/herbalclub/desktop-electron-v1/.github'
-let g:netrw_dirhist_5='/home/kunal/.tmux/plugins'
