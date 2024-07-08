@@ -87,7 +87,7 @@ augroup remember_folds
 augroup END
 
 " Append template to new C++ files
-"autocmd BufNewFile *.cpp 0r ~/.vim/templates/skeleton.cpp
+autocmd BufNewFile *.cpp 0r ~/.vim/templates/skeleton.cpp
 "autocmd BufNewFile *.go 0r ~/.vim/templates/init.go
 "autocmd BufNewFile *.rs 0r ~/.vim/templates/init.rs
 "autocmd BufNewFile *.c 0r ~/.vim/templates/init.c
@@ -130,10 +130,10 @@ filetype plugin indent on    " required
 
 "General shotcut for compiling and running
 " you need make.sh in computer to work 
-"set makeprg=make.sh\ %:r
-"autocmd filetype cpp nnoremap <F5> :w <bar> Make <CR> 
-"autocmd filetype cpp nnoremap <F6> :vertical terminal ++shell ++cols=40 ./%:r.out<CR>
-"autocmd filetype cpp nnoremap <F8> :!./%:r.out<CR>
+set makeprg=make.sh\ %:r
+autocmd filetype cpp nnoremap <F5> :w <bar> Make <CR> 
+autocmd filetype cpp nnoremap <F6> :vertical terminal ++shell ++cols=40 ./%:r.out<CR>
+autocmd filetype cpp nnoremap <F8> :!./%:r.out<CR>
 
 "CodeForces specific
 "nnoremap <F9> :vertical terminal ++shell ++cols=40 cf test<CR>
@@ -177,10 +177,10 @@ highlight GitGutterAdd    guifg=#009900 ctermfg=2 guibg=NONE
 highlight GitGutterChange guifg=#bbbb00 ctermfg=3 guibg=NONE
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1 guibg=NONE
 
-hi Normal guibg=NONE ctermbg=NONE
-"set cursorline
-"highlight CursorLine term=bold cterm=NONE ctermbg=none  ctermfg=red gui=bold
-"highlight CursorLineNr term=bold cterm=none ctermbg=none ctermfg=white  gui=none 
+"hi Normal guibg=NONE ctermbg=NONE
+set cursorline
+highlight CursorLine term=bold cterm=NONE ctermbg=none  ctermfg=red gui=bold
+highlight CursorLineNr term=bold cterm=none ctermbg=none ctermfg=white  gui=none 
 
 " Map J and K keys to move selected block up and down
 vnoremap J :m '>+1<CR>gv=gv

@@ -213,7 +213,5 @@ eval "$(direnv hook zsh)"
 # add Pulumi to the PATH
 export PATH=$PATH:/home/kunal/.pulumi/bin
 
-terraform -install-autocomplete
-
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
