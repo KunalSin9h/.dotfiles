@@ -11,7 +11,7 @@
   "base_keymap": "VSCode",
   "theme": "Andromeda",
   "ui_font_size": 16,
-  "buffer_font_size": 20,
+  "buffer_font_size": 16,
   "buffer_font_family": "DejaVu Sans Mono",
   // Vim mode settings
   "vim_mode": true,
@@ -34,13 +34,6 @@
     "right_padding": 0.2
   },
   // Use Copilot Chat AI as default
-  "assistant": {
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4"
-    },
-    "version": "2"
-  },
   // Uncomment below to use local AI with Ollama, refer https://zed.dev/docs/language-model-integration?highlight=ollama#using-ollama-on-macos
   // "assistant": {
   //   "default_model": {
@@ -52,7 +45,7 @@
   // },
   // Inlay hints preconfigured by Zed: Go, Rust, Typescript and Svelte
   "inlay_hints": {
-    "enabled": true
+    "enabled": false
   },
   // LSP
   "lsp": {
@@ -113,5 +106,6 @@
   },
   "chat_panel": {
     "dock": "left"
-  }
+  },
+  "show_completions_on_input": true
 }
