@@ -6,8 +6,6 @@
 " ██╗░░╚██╔╝░░██║██║░╚═╝░██║██║░░██║╚█████╔╝
 " ╚═╝░░░╚═╝░░░╚═╝╚═╝░░░░░╚═╝╚═╝░░╚═╝░╚════╝░
 
-
-
 "General Editor Setting
 set autoread                    " Auto reload file after external commandset relativenumber
 set binary                      " Enable binary support
