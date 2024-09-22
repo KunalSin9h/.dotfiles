@@ -74,5 +74,5 @@ key = "T"
 mods = "Control|Shift"
 
 [window.padding]
-x = 10
-y = 8
+x = 0
+y = 0

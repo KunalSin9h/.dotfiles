@@ -1,4 +1,3 @@
-
 " ░░░██╗░░░██╗██╗███╗░░░███╗██████╗░░█████╗░
 " ░░░██║░░░██║██║████╗░████║██╔══██╗██╔══██╗
 " ░░░╚██╗░██╔╝██║██╔████╔██║██████╔╝██║░░╚═╝
@@ -49,12 +48,14 @@ set wildmenu            "adv. menu for auto-comp.
 set splitbelow splitright
 
 syntax enable
-" set background=light
-" let g:solarized_termcolors=256
-" colorscheme solarized
 
-set background=dark
-colorscheme gruvbox
+"set background=light
+"let g:solarized_termcolors=256
+"colorscheme solarized
+
+set background=light
+colorscheme solarized
+let g:solarized_termcolors=256
 
 set spelllang=en_gb
 set spellfile=~/.vim/spell.en.utf-8.add
@@ -84,49 +85,40 @@ augroup remember_folds
   autocmd BufWinEnter * silent! loadview
 augroup END
 
-" Append template to new C++ files
+"Append template to new Files
 autocmd BufNewFile *.cpp 0r ~/.vim/templates/skeleton.cpp
-"autocmd BufNewFile *.go 0r ~/.vim/templates/init.go
-"autocmd BufNewFile *.rs 0r ~/.vim/templates/init.rs
-"autocmd BufNewFile *.c 0r ~/.vim/templates/init.c
-"
+autocmd BufNewFile *.go 0r ~/.vim/templates/init.go
+autocmd BufNewFile *.rs 0r ~/.vim/templates/init.rs
+autocmd BufNewFile *.c 0r ~/.vim/templates/init.c
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
 set rtp+=~/.vim/bundle/Vundle.vim
-
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-" Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
-
 Plugin 'tpope/vim-dispatch'
 Plugin 'octol/vim-cpp-enhanced-highlight'
-
 Plugin 'bling/vim-bufferline' "show the list of buffers in the command bar
 Plugin 'delimitMate.vim' "completion for quotes, parens, brackets
 
-Plugin 'airblade/vim-gitgutter'
-
 "https://www.youtube.com/watch?v=7-dfpQ5sexk
 "do it like this else just "yarn install" wont work
-" "yarn install --ignore-engines" will work
+"yarn install --ignore-engines" will work
 Plugin 'neoclide/coc.nvim' "conquer of completion
-
 Plugin 'tpope/vim-commentary' " for comments
 
-" Navigation with tmux support
-Plugin 'christoomey/vim-tmux-navigator'
+"Navigation with tmux support
+"Plugin 'christoomey/vim-tmux-navigator'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-
-"General shotcut for compiling and running
+" General shotcut for compiling and running
 " you need make.sh in computer to work 
 set makeprg=make.sh\ %:r
 autocmd filetype cpp nnoremap <F5> :w <bar> Make <CR> 
@@ -163,23 +155,6 @@ let g:UltiSnipsEditSplit="vertical"
 inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
 inoremap <expr> <S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
 
-let g:gitgutter_sign_added = '+'
-let g:gitgutter_sign_modified = '~'
-let g:gitgutter_sign_removed = 'x'
-let g:gitgutter_sign_removed_first_line = 'x^'
-let g:gitgutter_sign_removed_above_and_below = 'x%'
-let g:gitgutter_sign_modified_removed = '~x'
-
-highlight clear SignColumn
-highlight GitGutterAdd    guifg=#009900 ctermfg=2 guibg=NONE
-highlight GitGutterChange guifg=#bbbb00 ctermfg=3 guibg=NONE
-highlight GitGutterDelete guifg=#ff2222 ctermfg=1 guibg=NONE
-
-"hi Normal guibg=NONE ctermbg=NONE
-set cursorline
-highlight CursorLine term=bold cterm=NONE ctermbg=none  ctermfg=red gui=bold
-highlight CursorLineNr term=bold cterm=none ctermbg=none ctermfg=white  gui=none 
-
 " Map J and K keys to move selected block up and down
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
@@ -195,3 +170,4 @@ function! s:show_documentation()
     call CocAction('doHover')
   endif
 endfunction
+
