@@ -55,7 +55,7 @@ read_only = "  "
 format = "[$path]($style)[$read_only]($read_only_style) "
 
 [git_branch]
-symbol = " "
+symbol = ""
 format = "on [$symbol$branch]($style) "
 # truncation_length = 4
 truncation_symbol = "…/"
