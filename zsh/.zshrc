@@ -26,7 +26,7 @@ SAVEHIST=10000
 HISTFILE=~/.cache/zsh/history
 
 # Alias
-alias cat='cat'
+alias cat='batcat'
 alias cd='z'
 alias ls='eza'
 alias ll='ls -alF'
@@ -37,6 +37,8 @@ alias mutt="neomutt"
 alias grep='grep --color=auto'
 alias cls='clear'
 alias cont='cd /mnt/hdard/cp/contest'
+alias ga="git add ."
+alias gc="git commit -m"
 
 alias cd2="cd ../../"
 alias cd3="cd ../../../"
@@ -121,10 +123,10 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/nul
 
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 
-# # https://unix.stackexchange.com/questions/43601/how-can-i-set-my-default-shell-to-start-up-tmux
-# if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-#   exec tmux
-# fi
+# https://unix.stackexchange.com/questions/43601/how-can-i-set-my-default-shell-to-start-up-tmux
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+ exec tmux
+fi
 
 #autoload -Uz vcs_info
 #precmd() { vcs_info }
@@ -209,3 +211,4 @@ prompt_color() {
 
 #eval "$(direnv hook zsh)"
 autoload -U +X bashcompinit && bashcompinit
+
