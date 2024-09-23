@@ -109,7 +109,7 @@ Plugin 'neoclide/coc.nvim' "conquer of completion
 Plugin 'tpope/vim-commentary' " for comments
 
 "Navigation with tmux support
-"Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'christoomey/vim-tmux-navigator'
 
 call vundle#end()            " required
 filetype plugin indent on    " required

@@ -38,7 +38,7 @@ set -g default-command /usr/bin/zsh
 set -g default-shell /usr/bin/zsh
 
 # Change Botton Pannel Color
-set -g status-bg "#000000"
+# set -g status-bg "#000000"
 set -g status-fg "#FFF4F4"
 # Transparent Background
 set-option -g status-style bg=default
@@ -64,24 +64,25 @@ bind -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel  "xclip
 # unbind -T copy-mode-vi Enter
 # bind-key -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "xclip -selection c"
 # bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "xclip -in -selection clipboard"
-#
-#
+
+set -g default-terminal "xterm-256color"
+
 #urxvt tab like window switching
-#bind -n S-down new-window
-#bind -n S-left prev
-#bind -n S-right next
-#
-## Setup Plugin
+bind -n S-down new-window
+bind -n S-left prev
+bind -n S-right next
+
+# Setup Plugin
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'christoomey/vim-tmux-navigator'
-## set -g @plugin 'dracula/tmux'
-#
-## set -g @dracula-show-powerline true
-## set -g @dracula-plugins "git"
-## set -g @dracula-git-colors "pink dark_gray"
-## set -g @dracula-show-flags true
-## set -g @dracula-show-left-icon session
-#set -g status-position top
-#
-## Initialize TMUX plugin manager (keep it at bottom) 
+# set -g @plugin 'dracula/tmux'
+
+# set -g @dracula-show-powerline true
+# set -g @dracula-plugins "git"
+# set -g @dracula-git-colors "pink dark_gray"
+# set -g @dracula-show-flags true
+# set -g @dracula-show-left-icon session
+set -g status-position top
+
+# Initialize TMUX plugin manager (keep it at bottom) 
 run '~/.tmux/plugins/tpm/tpm'
