@@ -26,7 +26,7 @@ SAVEHIST=10000
 HISTFILE=~/.cache/zsh/history
 
 # Alias
-alias cat='bat'
+alias cat='cat'
 alias cd='z'
 alias ls='eza'
 alias ll='ls -alF'
