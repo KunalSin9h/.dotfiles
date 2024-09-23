@@ -37,8 +37,10 @@ alias mutt="neomutt"
 alias grep='grep --color=auto'
 alias cls='clear'
 alias cont='cd /mnt/hdard/cp/contest'
+alias gi="git status"
 alias ga="git add ."
 alias gc="git commit -m"
+alias gp="git push origin"
 
 alias cd2="cd ../../"
 alias cd3="cd ../../../"
