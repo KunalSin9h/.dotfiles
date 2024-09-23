@@ -16,8 +16,6 @@ autoload -U colors && colors
 # Exports
 export EXA_COLORS="da=1;34"
 export FZF_DEFAULT_COMMAND="rg --files --hidden -g'!.git' -g'!.cache' -g'!go' -g'!.vscode' -g'!view'"
-export PATH=$PATH:/home/kunal/scripts
-export PATH=$PATH:/home/kunal/.config/coc/extensions/coc-clangd-data/install/15.0.6/clangd_15.0.6/bin/clangd
 
 export PATH=$PATH:/home/kunal/go/bin
 export PATH=$PATH:/home/kunal/scripts
@@ -119,39 +117,40 @@ zstyle :compinstall filename '/home/kunal/.zshrc'
 # 1. zsh-syntax-highlighting
 # -> sudo pacman -S zsh-syntax-highlighting
 # Load zsh-syntax-highlighting; should be last.
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 
 # # https://unix.stackexchange.com/questions/43601/how-can-i-set-my-default-shell-to-start-up-tmux
 # if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
 #   exec tmux
 # fi
 
-autoload -Uz vcs_info
-precmd() { vcs_info }
+#autoload -Uz vcs_info
+#precmd() { vcs_info }
 
-zstyle ':vcs_info:git:*' formats '%b '
+#zstyle ':vcs_info:git:*' formats '%b '
 
-setopt PROMPT_SUBST
-PROMPT='
-%F{green}%*%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f
-$ '
+#setopt PROMPT_SUBST
+#PROMPT='
+#%F{green}%*%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f
+#$ '
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
 
 # Use a special colour for Nix shells.
-#prompt_color() {
-#    if [ -n "$IN_NIX_SHELL" ]; then
-#        echo "$fg_bold[blue]"
-#    else
-#        echo "$fg_bold[green]"
-#    fi
-#}
+prompt_color() {
+    if [ -n "$IN_NIX_SHELL" ]; then
+        echo "$fg_bold[blue]"
+    else
+        echo "$fg_bold[green]"
+    fi
+}
 
 
 # Use a different prompt for root and non-root users.
@@ -208,10 +207,5 @@ prompt_color() {
     fi
 }
 
-eval "$(direnv hook zsh)"
-
-# add Pulumi to the PATH
-export PATH=$PATH:/home/kunal/.pulumi/bin
-
+#eval "$(direnv hook zsh)"
 autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/bin/terraform terraform
