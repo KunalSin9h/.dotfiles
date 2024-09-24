@@ -17,8 +17,8 @@ autoload -U colors && colors
 export EXA_COLORS="da=1;34"
 export FZF_DEFAULT_COMMAND="rg --files --hidden -g'!.git' -g'!.cache' -g'!go' -g'!.vscode' -g'!view'"
 
-export PATH=$PATH:/home/kunal/go/bin
-export PATH=$PATH:/home/kunal/scripts
+export PATH=$PATH:/home/kunalsin9h/go/bin
+export PATH=$PATH:/home/kunalsin9h/scripts
 
 # History in cache directory:
 HISTSIZE=10000
@@ -126,9 +126,9 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/nul
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 
 # https://unix.stackexchange.com/questions/43601/how-can-i-set-my-default-shell-to-start-up-tmux
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
- exec tmux
-fi
+# if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+#  exec tmux
+# fi
 
 #autoload -Uz vcs_info
 #precmd() { vcs_info }
