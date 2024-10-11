@@ -232,7 +232,7 @@ bindsym $mod+Escape exec --no-startup-id i3lock -c 000000 && xset dpms force off
 #exec_always /usr/bin/lxqt-policykit-agent
 
 # background image
-exec_always feh --bg-scale /home/kunalsin9h/Pictures/wall.jpg
+exec_always feh --bg-scale /home/kunal/Pictures/wall.jpg
 
 # Gaps
 #for_window [class="^.*"] border pixel 2

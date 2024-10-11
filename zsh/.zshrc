@@ -1,3 +1,5 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/home/kunal/.zsh/completions:"* ]]; then export FPATH="/home/kunal/.zsh/completions:$FPATH"; fi
 #  
 #  ░░░███████╗░██████╗██╗░░██╗██████╗░░█████╗░
 #  ░░░╚════██║██╔════╝██║░░██║██╔══██╗██╔══██╗
@@ -17,8 +19,8 @@ autoload -U colors && colors
 export EXA_COLORS="da=1;34"
 export FZF_DEFAULT_COMMAND="rg --files --hidden -g'!.git' -g'!.cache' -g'!go' -g'!.vscode' -g'!view'"
 
-export PATH=$PATH:/home/kunalsin9h/go/bin
-export PATH=$PATH:/home/kunalsin9h/scripts
+export PATH=$PATH:/home/kunal/go/bin
+export PATH=$PATH:/home/kunal/scripts
 
 # History in cache directory:
 HISTSIZE=10000
@@ -27,7 +29,7 @@ HISTFILE=~/.cache/zsh/history
 
 # Alias
 alias cat='batcat'
-alias cd='z'
+#alias cd='zoxide'
 alias ls='eza'
 alias ll='ls -alF'
 alias la='ls -a'
@@ -144,7 +146,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-eval "$(zoxide init zsh)"
+#eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
 
 # Use a special colour for Nix shells.
@@ -214,3 +216,10 @@ prompt_color() {
 #eval "$(direnv hook zsh)"
 autoload -U +X bashcompinit && bashcompinit
 
+. "/home/kunal/.deno/env"
+# bun completions
+[ -s "/home/kunal/.bun/_bun" ] && source "/home/kunal/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
