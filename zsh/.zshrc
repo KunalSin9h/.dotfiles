@@ -30,7 +30,7 @@ HISTFILE=~/.cache/zsh/history
 # Alias
 alias cat='batcat'
 #alias cd='zoxide'
-alias ls='eza'
+alias ls='ls'
 alias ll='ls -alF'
 alias la='ls -a'
 alias tr='ls -T'
