@@ -56,9 +56,6 @@ colorscheme gruvbox
 set spelllang=en_gb
 set spellfile=~/.vim/spell.en.utf-8.add
 
-"au BufNewFile,BufRead /tmp/neomutt*  setf mail
-"au BufNewFile,BufRead /tmp/neomutt*  set ai et tw=68 spell
-
 "Cursor Style on diff mode(Insert & Normal)
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
@@ -167,6 +164,3 @@ function! s:show_documentation()
   endif
 endfunction
 
-
-" Disable startup warnings 
-"let g:coc_disable_startup_warning = 1
