@@ -167,3 +167,6 @@ function! s:show_documentation()
   endif
 endfunction
 
+
+" Disable startup warnings 
+"let g:coc_disable_startup_warning = 1
