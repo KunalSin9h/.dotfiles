@@ -30,10 +30,10 @@ HISTFILE=~/.cache/zsh/history
 # Alias
 alias cat='batcat'
 #alias cd='zoxide'
-alias ls='ls'
-alias ll='ls -alF'
-alias la='ls -a'
-alias tr='ls -T'
+alias ls='eza'
+alias ll='eza -alF'
+alias la='eza -a'
+alias tr='eza -T'
 alias vi='vim'
 alias mutt="neomutt"
 alias grep='grep --color=auto'
@@ -225,3 +225,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 . "$HOME/.local/bin/env"
+
+# commit
+export COMMIT_INSTALL="$HOME/.commit"
+export PATH="$COMMIT_INSTALL/bin:$PATH"
