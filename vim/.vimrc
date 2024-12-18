@@ -49,10 +49,6 @@ set splitbelow splitright
 
 syntax enable
 
-set background=dark
-"let g:solarized_termcolors=256
-colorscheme gruvbox
-
 set spelllang=en_gb
 set spellfile=~/.vim/spell.en.utf-8.add
 
@@ -108,8 +104,18 @@ Plugin 'tpope/vim-commentary' " for comments
 "Navigation with tmux support
 Plugin 'christoomey/vim-tmux-navigator'
 
+"solarized
+"Plugin 'altercation/vim-colors-solarized'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+set background=dark
+set termguicolors
+colorscheme aylin
+"let g:solarized_termcolors=256
+"let g:solarized_visibility = "high"
+"let g:solarized_contrast = "high"
 
 " General shotcut for compiling and running
 " you need make.sh in computer to work 
@@ -152,7 +158,6 @@ inoremap <expr> <S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
-set termguicolors
 
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
@@ -163,4 +168,5 @@ function! s:show_documentation()
     call CocAction('doHover')
   endif
 endfunction
+
 
