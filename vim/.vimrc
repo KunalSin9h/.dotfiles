@@ -112,7 +112,7 @@ filetype plugin indent on    " required
 
 set background=dark
 set termguicolors
-colorscheme aylin
+colorscheme gruvbox
 "let g:solarized_termcolors=256
 "let g:solarized_visibility = "high"
 "let g:solarized_contrast = "high"
@@ -170,3 +170,6 @@ function! s:show_documentation()
 endfunction
 
 
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
