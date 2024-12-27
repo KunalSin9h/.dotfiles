@@ -1,0 +1,8 @@
+theme = GruvboxDarkHard
+mouse-hide-while-typing = true
+mouse-scroll-multiplier = 2
+window-padding-balance = true
+window-save-state = always
+window-colorspace = "display-p3"
+background = 1C2021
+window-decoration = false

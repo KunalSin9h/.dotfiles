@@ -114,7 +114,7 @@ filetype plugin indent on    " required
 
 set background=dark
 set termguicolors
-colorscheme gruvbox
+colorscheme gruvboxhard
 "let g:solarized_termcolors=256
 "let g:solarized_visibility = "high"
 "let g:solarized_contrast = "high"
