@@ -95,6 +95,8 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'bling/vim-bufferline' "show the list of buffers in the command bar
 Plugin 'delimitMate.vim' "completion for quotes, parens, brackets
 
+Plugin 'ziglang/zig.vim'
+
 "https://www.youtube.com/watch?v=7-dfpQ5sexk
 "do it like this else just "yarn install" wont work
 "yarn install --ignore-engines" will work
@@ -173,3 +175,6 @@ endfunction
 set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
+" zig autoformat on save
+let g:zig_fmt_autosave = 0
