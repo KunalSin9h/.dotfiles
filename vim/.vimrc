@@ -127,7 +127,7 @@ autocmd filetype cpp nnoremap <F6> :vertical terminal ++shell ++cols=40 ./%:r.ou
 autocmd filetype cpp nnoremap <F8> :!./%:r.out<CR>
 
 "CodeForces specific
-nnoremap <F9> :vertical terminal ++shell ++cols=40 ru test --copy<CR>
+nnoremap <F9> :vertical terminal ++shell ++cols=40 ru t<CR>
 "nnoremap <F12> :vertical terminal ++shell ++cols=40 cfsubmit.sh<CR>
 
 "Competatie Companion

@@ -5,8 +5,6 @@ using namespace std;
 #define dbg(...)
 #endif
 
-#define all(x) begin(x), end(x)
-
 int main(){
     cin.tie(0)->sync_with_stdio(0);
 

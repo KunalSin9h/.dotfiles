@@ -29,7 +29,6 @@ HISTFILE=~/.cache/zsh/history
 
 # Alias
 alias cat='batcat'
-#alias cd='zoxide'
 alias ls='eza'
 alias ll='eza -alF'
 alias la='eza -a'
@@ -43,6 +42,8 @@ alias gi="git status"
 alias ga="git add ."
 alias gc="git commit -m"
 alias gp="git push origin"
+
+alias cdcp="cd /media/kunal/hdd_drive/cp"
 
 alias cd2="cd ../../"
 alias cd3="cd ../../../"
